@@ -29,10 +29,10 @@ Insert into Question (id, label)
 values (3, 'Quel animal est la couleur du cheval blanc d’Henri IV ?');
 
 Insert into Proposal (id, label, correct, QUESTION_ID)
-values (9, 'Rouge', 0, 2);
+values (9, 'Rouge', 0, 3);
 Insert into Proposal (id, label, correct, QUESTION_ID)
-values (10, 'Blanc', 1, 2);
+values (10, 'Blanc', 1, 3);
 Insert into Proposal (id, label, correct, QUESTION_ID)
-values (11, 'Mauve', 0, 2);
+values (11, 'Mauve', 0, 3);
 Insert into Proposal (id, label, correct, QUESTION_ID)
-values (12, 'Noir', 0, 2);
+values (12, 'Noir', 0, 3);
