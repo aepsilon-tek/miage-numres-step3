@@ -56,13 +56,11 @@ dist/assets/main-BdixoVug.js    3.20 kB │ gzip: 1.14 kB
 Réponse:
 https://4173-stabbaa24-miagenumresst-utow5pnt2mr.ws-eu117.gitpod.io/assets/main-BdixoVug.js
 https://4173-stabbaa24-miagenumresst-utow5pnt2mr.ws-eu117.gitpod.io/assets/style-Dgd37vtf.js
-chrome-extension://bcgbghlhkkhcimckjabgomapgommajen/customScript.bundle.js
 
 # Q9 : Noter les nom des différents fichiers .js qui sont chargés au moment du changement de page.
 Réponse:
 https://4173-stabbaa24-miagenumresst-utow5pnt2mr.ws-eu117.gitpod.io/assets/about-D08RWGIN.js
 https://4173-stabbaa24-miagenumresst-utow5pnt2mr.ws-eu117.gitpod.io/assets/style-Dgd37vtf.js
-chrome-extension://bcgbghlhkkhcimckjabgomapgommajen/customScript.bundle.js
 
 # Q10: Quel est l'intérêt de lu Code Splitting d'un point de vue éco-responsable ?
 Réponse:
@@ -77,19 +75,27 @@ Screen:
 ![Capture d'écran](assets/score_eco.png)
 
 # Q12:  Proposition 1
-Description:
+Description: Les données des questions et des réponses sont rechargées à chaque fois, même si elles n'ont pas changé.
+Proposition : Mettre en cache les données des questions et des réponses dans localStorage et les recharger uniquement si elles ont changé depuis le dernier chargement.
+
 Nb de requête total du parcours de l'utilisateur:
 Taille total des requêtes du parcours de l'utilisateur:
 Taille total des fichiers généré :
 
 # Q13:  Proposition 2
-Description:
+Description: Les réponses serveur pour les questions et les propositions ne sont pas compressées, ce qui augmente la quantité de données transférées.
+
+Proposition : Utiliser des techniques de compression comme gzip pour les réponses serveur afin de réduire la taille des données transmises.
+
 Nb de requête total du parcours de l'utilisateur:
 Taille total des requêtes du parcours de l'utilisateur:
 Taille total des fichiers généré :
 
 # Q14:  Proposition 3
-Description:
+Description: En utilisant la console du développeur, il est constaté que tous les scripts de médias sociaux sont chargés, même quand ils ne sont pas utilisés.
+
+Proposition : Retarder le chargement des scripts de médias sociaux jusqu'à ce qu'ils soient nécessaires, par exemple, en les chargeant uniquement lorsqu'un utilisateur interagit avec la zone des médias sociaux.
+
 Nb de requête total du parcours de l'utilisateur:
 Taille total des requêtes du parcours de l'utilisateur:
 Taille total des fichiers générés :
