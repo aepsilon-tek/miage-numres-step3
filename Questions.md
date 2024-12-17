@@ -99,7 +99,7 @@ Conclusion : Le Code Splitting permet d'optimiser l'utilisation des ressources n
 
 # Q11: Ajouter le screen de votre score :
 Screen:
-
+![alt text](image.png)
 
 # Q12:  Proposition 1
 Description:
