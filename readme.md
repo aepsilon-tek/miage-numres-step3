@@ -1,0 +1,153 @@
+# Rappels
+
+## Sujet : Faire Burger Quizz !
+Vous avez 4 séances de TD/TP pour  produire un site web qui permettent de répondre à des questions et  donne le score.
+
+
+## Environnement
+L'ensemble des  4 TD/TP sont à réaliser sur **_Gitpod_**.
+Vous devez réutiliser le compte que vous avez crée durant la première séance.
+
+## Déroulement
+
+Comme au premier TP, vous devez suivre le même processus que pour contribuer à un projet:
+1. Dupliquer (**Forker**) le projet github
+1. Modifier / compléter des fichier du repo. forké
+1. Commiter vos modifs sur votre repo.
+1. Proposer vos modifications sur le repo. parent (**PullRequest**)
+
+## Architecture
+L'architecture   générale de  l'application  Burger Quizz est la suivante :
+![Capture d'écran](assets/Archi.png)
+
+Une application web consomme une API Rest Quarkus  qui s'appuie sur une base de données relationnelles en  mémoire **H2**.
+
+## TP3 - Choix stack Front-End
+
+Votre client  veut une api de quizz en français qui :
+* Permet à un utilisateur de passer le quizz.
+* Indique le score du joueur à la fin du quizz.
+* Met en avant tout ces réseaux sociaux.
+* Une page "About".
+* Une image fix avec un "?"
+
+**L'objectif de ce troisième TP est d'identifier les différents paramètres à prendre en compte dans le choix d'une stack et de découvrir l'app front qui servira de base pour répondre au besoin du Client**
+
+# Fork du projet
+L'objectif est de créer une copie du projet 'miage-numres-step3' sur votre compte github.
+
+1. Se rendre sur le projet github [miage-numres-step3] (https://github.com/aepsilon-tek/miage-numres-step3)
+1. Fork du projet grâce au bouton **Fork**
+![Capture d'écran](assets/Fork.png)
+
+# Lancement de GitPod
+
+Pour utiliser  **GitPod** avec votre projet forké, il suffit d'ouvrir  l'url suivant dans votre navigateur :
+**https://gitpod.io/#** + **URL_REPO_GITHUB**
+
+Avec un repo _https://github.com/miage3-ae/miage-numres-step3_ alors l'url est : **https://gitpod.io/#https://github.com/miage3-ae/miage-numres-step3**
+
+
+# ViteJs
+ Vite est un outil de construction qui vise à fournir une expérience de développement plus rapide et plus simple pour les projets Web modernes. Il se compose de deux grandes parties :
+ - Un serveur de développement qui offre de riches améliorations de
+   fonctionnalités par rapport aux modules ES natifs, par exemple un
+   remplacement de module à chaud (HMR) extrêmement rapide.
+ - Une commande de build qui regroupe votre code avec Rollup,
+   préconfiguré pour générer des ressources statiques hautement
+   optimisées pour la production.
+   
+Nous utiliserons Vite durant ce TP pour nous permettre de mettre en évidence les optimisation faite par ce qu'on appel un "bundler"
+
+# L'intérêt d'un bundler
+Un bundler est un outils qui permet notamment de rendre l'App utilisable sur tous les navigateurs, et optimise le code par plusieurs mécanisme comme la minification des fichiers js et css.
+ViteJs utilise un bundler quand on "build" l'App pour la mettre en ligne.
+
+1. Se rendre dans l'app front "bigger-stack" `cd front/bigger-stack/`
+2. Installer les dépendances : `npm install`
+3. Lancer l'app front en mode "dev" `npm run start`
+4. Répondre à la question Q1 du fichier **_Questions.md_**
+5. Build l'app`npm run build`
+6. Répondre à la question Q2 du fichier **_Questions.md_**
+7. Regarder le fichier minifier "main-*.js" dans le dossier  `/bigger-stack/dist/bigger-stack/browser/`
+8. Répondre à la question Q3 du fichier **_Questions.md_**
+9. Commiter  & Pusher le fichier **_Questions.md_** 
+
+
+# Attention à ce qu'on ajoute
+Vite JS nous permet de lancer notre application en mode DEV, ou en mode PRODUCTION.
+Comme vu au dessus le mode PRODUCTION a plusieurs intérêt et notamment celui d'optimiser les fichier finaux qui serviront d'App.
+Le mode DEV, nous permet de profiter du HMR, ce qui donne une expérience de développement fluide.
+
+1. Se rendre dans l'app front "big-stack" `cd front/big-stack/`
+2. Installer les dépendances : `npm install`
+3. Build l'App `npm run build`
+4. Répondre à la question Q4 du fichier **_Questions.md_**
+5. Lancer l'app front en mode "dev" `npm run dev`
+6. Constater le Hot module Reload (HMR)
+	7. Mettre cote à cote gitpod et l'onglet de l'app que vous venez de lancer
+	8. Ouvrez le fichier `front/big-stack/src/App.tsx`
+	10. dé-commenter la ligne `// import { Rating } from '@smastrom/react-rating';`
+	11. dé-commenter la ligne `// const [rating, setRating] = useState(0) // Initial value`
+	12. dé-commenter la ligne `{/* <Rating style={{ maxWidth: 250 }} value={rating} onChange={setRating} /> */}`
+	13. Sauvegarder et Répondez à la Q5 du fichier **_Questions.md_**
+7. Build l'App `npm run build`
+8. Répondre à la question Q6 du fichier **_Questions.md_**
+9. Commiter  & Pusher le fichier **_Questions.md_**
+
+## Code Splitting
+ViteJs permet d'effectuer du Code splitting
+
+1. Se rendre dans l'app front "light-stack" `cd front/light-stack`
+2. Installer les dépendances : `npm install`
+3. Build l'App `npm run build`
+4. Répondre à la question Q7 du fichier **_Questions.md_**
+5. Constater le Code Splitting
+	7. Lancer l'app front en mode "build" `npm run preview`
+	8. Mettre cote à cote gitpod et l'onglet de l'app que vous venez de lancer
+	9. Ouvrir la console développer (click droit -> inspecter)
+	10. Aller dans l'onglet Réseau
+	11. Effacer l'historique
+	12. Recharger la page
+	13. Répondre à la question Q8 du fichier **_Questions.md_**
+	14. Effacer l'historique
+	15. Click sur /about
+	16. Répondre à la question Q9 du fichier **_Questions.md_**
+6. Répondre à la question Q10 du fichier **_Questions.md_**
+7. Commiter  & Pusher le fichier **_Questions.md_**
+
+## Accessibilité
+
+### Lighthouse
+Lightouse est un outils présent dans le navigateur Chrome qui se repose sur Axe (vu en cour), un outil permettant d'évaluer jusqu'à un certain point l'accessibilité de votre site web.
+
+1. Ouvrir la console développer (click droit -> inspecter)
+2. Aller dans Lighthouse
+3. Choisir Navigation, Bureau, Accessibilité
+4. Lance l'analyse
+5. Répondre à la question Q11 du fichier **_Questions.md_**
+8. Commiter  & Pusher le fichier **_Questions.md_**
+
+## Connecter l'api et le front
+
+1. Retourner à la racine du projet :  `cd /workspace/miage-numres-step3/`
+2. Lancer l'api : `./mvnw quarkus:dev -pl api`
+3. Clicker sur "make public"
+4. Choisir Navigation, Bureau, Accessibilité
+5. Dans VS Code : 
+	6. Aller dans l'onglet PORTS
+	7. copier l'Address qui commence par `https://8080...`
+6. Dans le fichier store.js `front/light-stack/src/store.js`
+	7. Modifier la ligne : `export const baseUrl = "https://url.api";` par l'url que vous venez de copier`export const baseUrl = "https://8080...";`
+7. Répondre à la question Q11 du fichier **_Questions.md_**
+8. Commiter  & Pusher le fichier **_Questions.md_**
+
+# Pull Request
+Une fois tous vos commits & Push réalisés sur votre repo, il est nécessaire de faire la **Pull Request** sur le repo **parent**.
+Pour cela, il suffit de :
+1. Se rendre sur votre compte personnel sur `GitHub`.
+1. Sur la page principale, se rendre sur `Contribute` > `Open pull Request`
+1. Remplir le titre de la pull request en précisant votre nom (vos noms) et `Create pull request`
+
+
+* ```./mvnw quarkus:dev -pl api``` : Lancement de l'api
