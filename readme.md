@@ -84,16 +84,16 @@ Le mode DEV, nous permet de profiter du HMR, ce qui donne une expérience de dé
 3. Build l'App `npm run build`
 4. Répondre à la question Q4 du fichier **_Questions.md_**
 5. Lancer l'app front en mode "dev" `npm run dev`
-6. Constater le Hot module Reload (HMR)
-	7. Mettre cote à cote gitpod et l'onglet de l'app que vous venez de lancer
-	8. Ouvrez le fichier `front/big-stack/src/App.tsx`
-	10. dé-commenter la ligne `// import { Rating } from '@smastrom/react-rating';`
-	11. dé-commenter la ligne `// const [rating, setRating] = useState(0) // Initial value`
-	12. dé-commenter la ligne `{/* <Rating style={{ maxWidth: 250 }} value={rating} onChange={setRating} /> */}`
-	13. Sauvegarder et Répondez à la Q5 du fichier **_Questions.md_**
-7. Build l'App `npm run build`
-8. Répondre à la question Q6 du fichier **_Questions.md_**
-9. Commiter  & Pusher le fichier **_Questions.md_**
+1. Constater le Hot module Reload (HMR)
+    1. Mettre cote à cote gitpod et l'onglet de l'app que vous venez de lancer
+    2. Ouvrez le fichier `front/big-stack/src/App.tsx`
+    3. dé-commenter la ligne `// import { Rating } from '@smastrom/react-rating';`
+    4. dé-commenter la ligne `// const [rating, setRating] = useState(0) // Initial value`
+    5. dé-commenter la ligne `{/* <Rating style={{ maxWidth: 250 }} value={rating} onChange={setRating} /> */}`
+    6. Sauvegarder et Répondez à la Q5 du fichier **_Questions.md_**
+8. Build l'App `npm run build`
+9. Répondre à la question Q6 du fichier **_Questions.md_**
+10. Commiter  & Pusher le fichier **_Questions.md_**
 
 ## Code Splitting
 ViteJs permet d'effectuer du Code splitting
@@ -102,19 +102,19 @@ ViteJs permet d'effectuer du Code splitting
 2. Installer les dépendances : `npm install`
 3. Build l'App `npm run build`
 4. Répondre à la question Q7 du fichier **_Questions.md_**
-5. Constater le Code Splitting
-	7. Lancer l'app front en mode "build" `npm run preview`
-	8. Mettre cote à cote gitpod et l'onglet de l'app que vous venez de lancer
-	9. Ouvrir la console développer (click droit -> inspecter)
-	10. Aller dans l'onglet Réseau
-	11. Effacer l'historique
-	12. Recharger la page
-	13. Répondre à la question Q8 du fichier **_Questions.md_**
-	14. Effacer l'historique
-	15. Click sur /about
-	16. Répondre à la question Q9 du fichier **_Questions.md_**
-6. Répondre à la question Q10 du fichier **_Questions.md_**
-7. Commiter  & Pusher le fichier **_Questions.md_**
+1. Constater le Code Splitting
+    1. Lancer l'app front en mode "build" `npm run preview`
+    2. Mettre cote à cote gitpod et l'onglet de l'app que vous venez de lancer
+    3. Ouvrir la console développer (click droit -> inspecter)
+    4. Aller dans l'onglet Réseau
+    5. Effacer l'historique
+    6. Recharger la page
+    7. Répondre à la question Q8 du fichier **_Questions.md_**
+    8. Effacer l'historique
+    9. Click sur /about
+    10. Répondre à la question Q9 du fichier **_Questions.md_**
+7. Répondre à la question Q10 du fichier **_Questions.md_**
+8. Commiter  & Pusher le fichier **_Questions.md_**
 
 ## Accessibilité
 
@@ -135,10 +135,10 @@ Lightouse est un outils présent dans le navigateur Chrome qui se repose sur Axe
 3. Clicker sur "make public"
 4. Choisir Navigation, Bureau, Accessibilité
 5. Dans VS Code : 
-	6. Aller dans l'onglet PORTS
-	7. copier l'Address qui commence par `https://8080...`
-6. Dans le fichier store.js `front/light-stack/src/store.js`
-	7. Modifier la ligne : `export const baseUrl = "https://url.api";` par l'url que vous venez de copier`export const baseUrl = "https://8080...";`
+    1. Aller dans l'onglet PORTS
+    2. Copier l'Address qui commence par `https://8080...`
+5. Dans le fichier store.js `front/light-stack/src/store.js`
+    1. Modifier la ligne : `export const baseUrl = "https://url.api";` par l'url que vous venez de copier`export const baseUrl = "https://8080...";`
 7. Répondre à la question Q11 du fichier **_Questions.md_**
 8. Commiter  & Pusher le fichier **_Questions.md_**
 
