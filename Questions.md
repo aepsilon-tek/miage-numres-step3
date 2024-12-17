@@ -65,7 +65,7 @@ Réponse:reduire l'emprint carbone
 
 # Q11: Ajouter le screen de votre score :
 Screen:
-![alt text](image.png)
+![alt text](image-1.png)
 
 # Q12:  Proposition 1
 Description:
