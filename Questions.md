@@ -36,18 +36,35 @@ Screen: ![alt text](image-2.png)
 
 # Q12:  Proposition 1
 Description:
+Il faut enlever les images des réseaux sociaux inutiles car pour l'application de Quizz on en a aucune utilité ainsi que tout le code associé (CSS, JS)
+
+Avant : 
+Nb de requête total du parcours de l'utilisateur:
+Taille total des requêtes du parcours de l'utilisateur: 2.3 KB transféré et 796 KB de ressources
+Taille total des fichiers généré : 
+
+Après : 
 Nb de requête total du parcours de l'utilisateur:
 Taille total des requêtes du parcours de l'utilisateur:
 Taille total des fichiers généré :
 
 # Q13:  Proposition 2
-Description:
+Description: Faire 1 requête unique la première fois, puis on stocke les requetes du quizz dans le localStorage
+
 Nb de requête total du parcours de l'utilisateur:
 Taille total des requêtes du parcours de l'utilisateur:
 Taille total des fichiers généré :
 
 # Q14:  Proposition 3
-Description:
+Description: Optimiser les images en enlevant les gif et les remplacant par des images moins lourds
+
+
 Nb de requête total du parcours de l'utilisateur:
 Taille total des requêtes du parcours de l'utilisateur:
 Taille total des fichiers générés :
+
+# Q15 : Proposition 4 
+Description: Mettre en place un cache
+
+# Q16 : Proposition 5
+Description: Faire du Lazy Loading, on extrait tout le CSS critique et on l’injecte directement dans le <head> afin que le contenu soit lisible sans attendre le chargement complet de la feuille de style externe.
