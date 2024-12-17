@@ -68,10 +68,10 @@ Screen:
 ![alt text](image-1.png)
 
 # Q12:  Proposition 1
-Description:
-Nb de requête total du parcours de l'utilisateur:
-Taille total des requêtes du parcours de l'utilisateur:
-Taille total des fichiers généré :
+Description: Au lieu d'utiliser des images les créer en css quand on peut.
+Nb de requête total du parcours de l'utilisateur: 
+Taille total des requêtes du parcours de l'utilisateur:C'est la nombre de requetes d'avant moins la requete de l'image.
+Taille total des fichiers généré : C'est la taille d'avant moins le taille de l'image.
 
 # Q13:  Proposition 2
 Description:
