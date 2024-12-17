@@ -57,17 +57,45 @@ dist/assets/index-03z4V8OH.js   156.75 kB │ gzip: 51.85 kB
 
 # Q7: Noter les nom des différents fichiers qui ont été générés par la commande.
 Réponse:
+vite v6.0.3 building for production...
+✓ 8 modules transformed.
+dist/about/index.html           0.53 kB │ gzip: 0.32 kB
+dist/index.html                 0.65 kB │ gzip: 0.37 kB
+dist/assets/style-b4SyXn9O.css  2.18 kB │ gzip: 0.79 kB
+dist/assets/about-D08RWGIN.js   0.15 kB │ gzip: 0.16 kB
+dist/assets/style-Dgd37vtf.js   0.71 kB │ gzip: 0.40 kB
+dist/assets/main-BdixoVug.js    3.20 kB │ gzip: 1.14 kB
+✓ built in 120ms
 
 # Q8 : Noter les nom des différents fichiers .js qui sont chargés au moment du chargement de la page.
 Réponse:
 
+main-BdixoVug.js
+style-Dgd37vtf.js
+
 # Q9 : Noter les nom des différents fichiers .js qui sont chargés au moment du changement de page.
 Réponse:
-
+about-D08RWGIN.js
+style-Dgd37vtf.js
 
 # Q10: Quel est l'intérêt de lu Code Splitting d'un point de vue éco-responsable ?
 Réponse:
 
+Le Code Splitting (fractionnement du code) consiste à diviser le code JavaScript en plusieurs fichiers plus petits qui sont chargés uniquement lorsque cela est nécessaire. Cela a plusieurs avantages d'un point de vue éco-responsable :
+
+Réduction de la taille des fichiers chargés initialement :
+Seul le code nécessaire pour afficher la page actuelle est téléchargé, ce qui diminue le transfert de données et réduit la consommation d'énergie associée.
+
+Optimisation des ressources réseau :
+Moins de données à transférer signifie moins de requêtes réseau et donc une réduction de l'empreinte carbone, surtout pour les utilisateurs ayant des connexions limitées ou des appareils moins performants.
+
+Amélioration des performances :
+En chargeant uniquement le nécessaire, les pages se chargent plus rapidement, ce qui améliore l'expérience utilisateur tout en limitant l'utilisation de CPU et d'énergie, à la fois côté client et serveur.
+
+Impact positif à grande échelle :
+Sur des sites avec un grand nombre d'utilisateurs, les économies réalisées en termes de bande passante et d'énergie deviennent significatives.
+
+Conclusion : Le Code Splitting permet d'optimiser l'utilisation des ressources numériques, réduisant ainsi la consommation d'énergie et contribuant à une démarche plus éco-responsable dans le développement web.
 
 # Q11: Ajouter le screen de votre score :
 Screen:
