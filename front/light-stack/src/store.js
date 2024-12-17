@@ -1,29 +1,18 @@
-export const baseUrl = "https://url.api";
+export const baseUrl = "https://8080-stabbaa24-miagenumresst-utow5pnt2mr.ws-eu117.gitpod.io";
 
 export function getQuestions() {
-  let questions;
-  if(localStorage.getItem('questions') === null){
-    questions = [];
-  }else {
-    questions = JSON.parse(localStorage.getItem('questions'));
-  }
-  return questions;
+  let questions = localStorage.getItem('questions');
+  return questions ? JSON.parse(questions) : [];
 }
 
 export function setQuestions(questions) {
-  localStorage.setItem('answers', JSON.stringify(questions));
+  localStorage.setItem('questions', JSON.stringify(questions));
 }
 
 export function getAnswers() {
-  let answers;
-  if(localStorage.getItem('answers') === null){
-    answers = [];
-  }else {
-    answers = JSON.parse(localStorage.getItem('answers'));
-  }
-  return answers;
+  let answers = localStorage.getItem('answers');
+  return answers ? JSON.parse(answers) : [];
 }
-
 
 export function saveAnswer(data) {
   const answers = getAnswers();
@@ -31,10 +20,15 @@ export function saveAnswer(data) {
   localStorage.setItem('answers', JSON.stringify(answers));
 }
 
-
 export async function getQuestionsApi() {
-  const url = `${baseUrl}/quizz/questions`;
+  const cacheKey = 'quizz_questions';
+  const cachedData = localStorage.getItem(cacheKey);
 
+  if (cachedData) {
+    return JSON.parse(cachedData); 
+  }
+
+  const url = `${baseUrl}/quizz/questions`;
   const response = await fetch(url);
 
   try {
@@ -43,16 +37,22 @@ export async function getQuestionsApi() {
     }
 
     const json = await response.json();
+    localStorage.setItem(cacheKey, JSON.stringify(json)); 
     return json;
   } catch (error) {
     console.error(error.message);
   }
 }
 
-
 export async function getProposalApi(idQuestion) {
-  const url = `${baseUrl}/quizz/questions/${idQuestion}/proposals`;
+  const cacheKey = `quizz_proposals_${idQuestion}`;
+  const cachedData = localStorage.getItem(cacheKey);
 
+  if (cachedData) {
+    return JSON.parse(cachedData);
+  }
+
+  const url = `${baseUrl}/quizz/questions/${idQuestion}/proposals`;
   const response = await fetch(url);
 
   try {
@@ -61,6 +61,7 @@ export async function getProposalApi(idQuestion) {
     }
 
     const json = await response.json();
+    localStorage.setItem(cacheKey, JSON.stringify(json));
     return json;
   } catch (error) {
     console.error(error.message);
@@ -71,7 +72,7 @@ export async function evaluate(proposals) {
   const url = `${baseUrl}/quizz/proposals/evaluate`;
 
   try {
-    const reponse = await fetch(url, {
+    const response = await fetch(url, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -79,9 +80,9 @@ export async function evaluate(proposals) {
       body: JSON.stringify(proposals),
     });
 
-    const resultat = await reponse.json();
-    return resultat;
-  } catch (erreur) {
-    console.error("Erreur :", erreur);
+    const result = await response.json();
+    return result;
+  } catch (error) {
+    console.error("Error:", error);
   }
 }
