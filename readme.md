@@ -130,17 +130,26 @@ Lightouse est un outils présent dans le navigateur Chrome qui se repose sur Axe
 
 ## Connecter l'api et le front
 
-1. Retourner à la racine du projet :  `cd /workspace/miage-numres-step3/`
-2. Lancer l'api : `./mvnw quarkus:dev -pl api`
-3. Clicker sur "make public"
-5. Dans VS Code : 
-    1. Aller dans l'onglet PORTS
-    2. Copier l'Address qui commence par `https://8080...`
-5. Dans le fichier store.js `front/light-stack/src/store.js`
-    1. Modifier la ligne : `export const baseUrl = "https://url.api";` par l'url que vous venez de copier`export const baseUrl = "https://8080...";`
+1. Ouvrir deux terminaux.
+1. Terminal 1 :
+  1. Retourner à la racine du projet :  `cd /workspace/miage-numres-step4/`
+  2. Aller dans le la partie front : `cd front`
+  3. Installer les dépendances : `npm install`
+  3. Lancer l'application Front en mode dev : `npm run dev`
+1. Terminal 2 :
+  1. Retourner à la racine du projet :  `cd /workspace/miage-numres-step4/`
+  2. Lancer l'api : `./mvnw quarkus:dev -pl api`
+  3. Clicker sur "make public"
+  5. Dans VS Code : 
+      1. Aller dans l'onglet PORTS
+      2. Copier l'Address qui commence par `https://8080...`
+  5. Dans le fichier store.js `front/light-stack/src/store.js`
+      1. Modifier la ligne : `export const baseUrl = "https://url.api";` par l'url que vous venez de copier`export const baseUrl = "https://8080...";`
 7. Faite le Quizz !
 
 # Amélioration
+
+Nous allons travailler sur le front "light-stack".
 
 Vous devez désormais regarder / analyser / critiquer / améliorer le code existant en appliquant les bonnes pratiques d'éco-conception.
 Effectuer le parcour d'un Utilisateur en vous aidant des information de la "console du devellopeur" de Chrome pour cela.
