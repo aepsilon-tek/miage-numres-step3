@@ -52,19 +52,19 @@ Screen:
 ![alt text](image-3.jpg)
 
 # Q12:  Proposition 1
-Description:
-Nb de requête total du parcours de l'utilisateur:
+Description: Au lieu d'utiliser des images les créer en css quand on peut.
+Nb de requête total du parcours de l'utilisateur: 
 Taille total des requêtes du parcours de l'utilisateur:
-Taille total des fichiers généré :
+Taille total des fichiers généré : C'est la taille d'avant moins la taille de l'image.
 
 # Q13:  Proposition 2
-Description:
+Description: Proposer seulement 3 réseaux sociaux certains réseaux sociaux sont peu ou pas utilisés par la majorité.
 Nb de requête total du parcours de l'utilisateur:
 Taille total des requêtes du parcours de l'utilisateur:
-Taille total des fichiers généré :
+Taille total des fichiers généré : La taille d'avant moins la taille du html sans les autres réseaux sociaux.
 
 # Q14:  Proposition 3
-Description:
+Description: On peut récuperer qu'une seule fois les questions et les propositions donc les mettre en cache au lieu de les recupérer a chaque fois que l'utilisateur clique sur une réponse ou sur le quizz.
 Nb de requête total du parcours de l'utilisateur:
-Taille total des requêtes du parcours de l'utilisateur:
+Taille total des requêtes du parcours de l'utilisateur: 1 seule requête au lieu de plusieurs
 Taille total des fichiers générés :
