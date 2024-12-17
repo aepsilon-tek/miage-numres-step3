@@ -1,11 +1,11 @@
 # Q1 : Donner la tailles des fichiers générer par la commande.
-Réponse:
+Réponse: 108.48 kB
 
 # Q2 : Donner la tailles des fichiers générer par la commande.
-Réponse:
+Réponse: 243 kB
 
 # Q3 : Est-ce que le fichier est lisible ? Quel est l'intêret de minifier les fichiers d'un point de vue éco-responsable ? Pourquoi on ne minifie pas les fichiers générer en mode dev ?
-Réponse:
+Réponse: Non il n'est pas lisible mais l'intêret est de réduire sa taille, qu'il se charge rapidement et qu'il consomme moins de ressources.
 
 # Q4 : Donner la tailles des fichiers générer par la commande.
 Réponse:
