@@ -1,14 +1,35 @@
 # Q1 : Donner la tailles des fichiers générer par la commande.
 Réponse:
 
+Initial chunk files | Names         |  Raw size |
+polyfills.js        | polyfills     |  90.20 kB | 
+main.js             | main          |  18.18 kB | 
+styles.css          | styles        |  95 bytes | 
+
 # Q2 : Donner la tailles des fichiers générer par la commande.
 Réponse:
+
+Initial chunk files   | Names         |  Raw size | Estimated transfer size
+main-FT3QBEBB.js      | main          | 208.48 kB |                56.93 kB
+polyfills-FFHMD2TL.js | polyfills     |  34.52 kB |                11.28 kB
+styles-5INURTSO.css   | styles        |   0 bytes |                 0 bytes
+
 
 # Q3 : Est-ce que le fichier est lisible ? Quel est l'intêret de minifier les fichiers d'un point de vue éco-responsable ? Pourquoi on ne minifie pas les fichiers générer en mode dev ?
 Réponse:
 
+Le fichier n'est pas facilement lisible. La minification supprime les espaces, les commentaires et raccourcit les noms de variables, rendant le code compact et difficile à interpréter.
+
+La minification réduit la taille des fichiers, diminuant la bande passante utilisée et la consommation d’énergie des serveurs et terminaux.
+Cela améliore la rapidité de chargement tout en réduisant l’empreinte carbone liée au transfert de données.
+
+En mode développement, la lisibilité du code est importante pour faciliter les modifications et le débogage.
+La minification complique ces tâches et ralentit le processus, ce qui est inutile pendant les phases de test.
+
 # Q4 : Donner la tailles des fichiers générer par la commande.
 Réponse:
+
+
 
 # Q5: Quel est l'intérêt du HMR ?
 Réponse:
