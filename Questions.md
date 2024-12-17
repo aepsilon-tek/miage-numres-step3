@@ -29,15 +29,13 @@ dist/assets/index-C_arIFqf.js   143.90 kB │ gzip: 46.34 kB
 # Q5: Quel est l'intérêt du HMR ?
 Réponse: 
 Le Hot Module Replacement (HMR) offre plusieurs avantages éco-responsables et de développement :
-1. Conservation de l'état de l'application pendant le développement, évite les rechargements complets de la page, conserve les données et l'état de l'interface et permet de réduire la consommation de ressources serveur
-2. Les modifications de code sont visibles immédiatement, pas besoin de rebuild complet de l'application et réduit le temps d'attente et la consommation d'énergie
-3. De plus, seuls les modules modifiés sont mis à jour, ça économise de la bande passante et optimise l'utilisation des ressources système comme on peut le voir ci-dessous :
+Conservation de l'état de l'application pendant le développement, évite les rechargements complets de la page, conserve les données et l'état de l'interface et permet de réduire la consommation de ressources serveur. Les modifications de code sont visibles immédiatement, pas besoin de rebuild complet de l'application et réduit le temps d'attente et la consommation d'énergie. De plus, seuls les modules modifiés sont mis à jour, ça économise de la bande passante et optimise l'utilisation des ressources système comme on peut le voir ci-dessous :
 ```bash
 1:12:37 PM [vite] (client) hmr update /src/App.tsx
 1:12:37 PM [vite] (client) ✨ new dependencies optimized: @smastrom/react-rating
 1:12:37 PM [vite] (client) ✨ optimized dependencies changed. reloading
 ```
-4. Et donc le cycle de développement plus rapide, moins de temps d'attente = moins de consommation énergétique et meilleure expérience de développement.
+Et donc le cycle de développement plus rapide, moins de temps d'attente = moins de consommation énergétique et meilleure expérience de développement.
 
 # Q6: Donner la tailles des fichiers générer par la commande. Pourquoi il faut être vigilant sur les libraires et autre composant qu'on ajoute dans nos applications d'un point de vue éco-responsable ?
 Réponse: npm run build
@@ -57,22 +55,36 @@ Il est recommandé de:
 - Évaluer l'impact de chaque nouvelle dépendance sur la taille du bundle
 
 # Q7: Noter les nom des différents fichiers qui ont été générés par la commande.
-Réponse:
+Réponse: npm run build
+dist/about/index.html           0.53 kB │ gzip: 0.32 kB
+dist/index.html                 0.65 kB │ gzip: 0.37 kB
+dist/assets/style-b4SyXn9O.css  2.18 kB │ gzip: 0.79 kB
+dist/assets/about-D08RWGIN.js   0.15 kB │ gzip: 0.16 kB
+dist/assets/style-Dgd37vtf.js   0.71 kB │ gzip: 0.40 kB
+dist/assets/main-BdixoVug.js    3.20 kB │ gzip: 1.14 kB
 
 # Q8 : Noter les nom des différents fichiers .js qui sont chargés au moment du chargement de la page.
-Réponse:
+Réponse: Au moment du chargement de la page, les fichiers suivants sont chargés:
+- main-BdixoVug.js
+- style-Dgd37vtf.js
+- content.js
+- executor.js
 
 # Q9 : Noter les nom des différents fichiers .js qui sont chargés au moment du changement de page.
-Réponse:
-
+Réponse: Au moment du changement de page /about, les fichiers suivants sont chargés:
+- about-D08RWGIN.js
+- style-Dgd37vtf.js
+- content.js
+- executor.js
 
 # Q10: Quel est l'intérêt de lu Code Splitting d'un point de vue éco-responsable ?
-Réponse:
-
+Réponse: L'intêret est que seul le code nécessaire à la page courante est chargé initialement, les autres modules sont chargés à la demande (lazy loading) donc ça réduit la consommation initiale de bande passante et réduit les ressources.
+On peut voir que la page d'accueil charge uniquement main-BdixoVug.js (3.20 kB) et que la page about charge séparément about-D08RWGIN.js (0.15 kB), donc ça permet d'éviter de charger du code inutilisé.
+On peut dire que le cache est optimisé car les fichiers séparés permettent un meilleur cache par route, les mises à jour d'une section n'invalident pas tout le cache donc ça réduit les transferts de données sur le long terme.
+Donc en réusumé : temps de chargement initial réduit, moins de parsing/compilation JavaScript au démarrage et diminue la consommation d'énergie des appareils clients.
 
 # Q11: Ajouter le screen de votre score :
 Screen:
-
 
 # Q12:  Proposition 1
 Description:
