@@ -23,3 +23,16 @@ Insert into Proposal (id, label, correct, QUESTION_ID)
 values (7, 'Moustique', 1, 2);
 Insert into Proposal (id, label, correct, QUESTION_ID)
 values (8, 'Crocodile', 0, 2);
+
+-- Question 3 :
+Insert into Question (id, label)
+values (2, "Quel animal est la couleur du cheval blanc d'Henri IV ?");
+
+Insert into Proposal (id, label, correct, QUESTION_ID)
+values (5, 'Rouge', 0, 2);
+Insert into Proposal (id, label, correct, QUESTION_ID)
+values (6, 'Blanc', 1, 2);
+Insert into Proposal (id, label, correct, QUESTION_ID)
+values (7, 'Mauve', 0, 2);
+Insert into Proposal (id, label, correct, QUESTION_ID)
+values (8, 'Noir', 0, 2);
