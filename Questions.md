@@ -84,7 +84,7 @@ On peut dire que le cache est optimisé car les fichiers séparés permettent un
 Donc en réusumé : temps de chargement initial réduit, moins de parsing/compilation JavaScript au démarrage et diminue la consommation d'énergie des appareils clients.
 
 # Q11: Ajouter le screen de votre score :
-Screen:
+Screen: ![Score du Lighthouse](image.png)
 
 # Q12:  Proposition 1
 Description:
