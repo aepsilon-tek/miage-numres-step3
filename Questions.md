@@ -12,14 +12,14 @@ Réduction de la bande passante || Moindre impact carbone
 Lisibilité et débogage || reetulisabilité 
 
 # Q4 : Donner la tailles des fichiers générer par la commande.
-Réponse:
+Réponse:154.15kB normal || gzip 50.09kB
 
 # Q5: Quel est l'intérêt du HMR ?
-Réponse:
+Réponse:réduisant le temps de rechargement et en conservant l’état de l’application.
 
 # Q6: Donner la tailles des fichiers générer par la commande. Pourquoi il faut être vigilant sur les libraires et autre composant qu'on ajoute dans nos applications d'un point de vue éco-responsable ?
 Réponse:
-
+167kB pour reduire notre emprint carbonne
 # Q7: Noter les nom des différents fichiers qui ont été générés par la commande.
 Réponse:
 
