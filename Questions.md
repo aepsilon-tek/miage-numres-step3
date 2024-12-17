@@ -74,7 +74,7 @@ Le Code Splitting permet de diviser un gros fichier JavaScript en plusieurs peti
 
 # Q11: Ajouter le screen de votre score :
 Screen:
-
+![Capture d'écran](assets/score_eco.png)
 
 # Q12:  Proposition 1
 Description:
