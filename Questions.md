@@ -95,6 +95,11 @@ Nb de requête total du parcours de l'utilisateur:
 Taille total des requêtes du parcours de l'utilisateur:
 Taille total des fichiers généré :
 
+Proposition de mettre en place le cache je passe de 14 requêtes à 4 requetes 4 requests
+124 B transferred
+3 B resources
+pour le quizz pas l'ensemble du site
+
 # Q13:  Proposition 2
 Description:
 Nb de requête total du parcours de l'utilisateur:
