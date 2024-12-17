@@ -1,11 +1,11 @@
 # Q1 : Donner la tailles des fichiers générer par la commande.
-Réponse:
+Réponse: 108.48 kB
 
 # Q2 : Donner la tailles des fichiers générer par la commande.
-Réponse:
+Réponse: 243.00 kB
 
 # Q3 : Est-ce que le fichier est lisible ? Quel est l'intêret de minifier les fichiers d'un point de vue éco-responsable ? Pourquoi on ne minifie pas les fichiers générer en mode dev ?
-Réponse:
+Réponse: Non. La minification des fichiers réduit leur taille, ce qui accélère le chargement, diminue la consommation de bande passante et réduit l'énergie utilisée par les serveurs et appareils, contribuant ainsi à une empreinte carbone plus faible. Cependant, en mode développement, les fichiers ne sont pas minifiés car cela rend le code difficile à lire et à déboguer, ralentit les temps de compilation, et les gains de performance sont inutiles puisque le code s'exécute en local sans contrainte réseau.
 
 # Q4 : Donner la tailles des fichiers générer par la commande.
 Réponse:
