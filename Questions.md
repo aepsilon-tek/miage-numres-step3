@@ -99,7 +99,7 @@ Conclusion : Le Code Splitting permet d'optimiser l'utilisation des ressources n
 
 # Q11: Ajouter le screen de votre score :
 Screen:
-![alt text](image.png)
+![alt text](imeage.png)
 
 # Q12:  Proposition 1
 Description:
@@ -107,14 +107,59 @@ Nb de requête total du parcours de l'utilisateur:
 Taille total des requêtes du parcours de l'utilisateur:
 Taille total des fichiers généré :
 
+Proposition :
+Lorsqu'un utilisateur répond aux questions d'un quiz, chaque réponse ne devrait pas générer une requête réseau individuelle. Au lieu de cela, regrouper toutes les réponses dans une seule requête POST au serveur une fois le quiz terminé.
+
+Détails de la solution :
+
+Collecter toutes les réponses dans un objet ou tableau côté client.
+Envoyer ce tableau dans une seule requête POST au serveur.
+Côté serveur, traiter les réponses groupées en une seule fois.
+Pourquoi c’est utile :
+
+Réduction du nombre de requêtes HTTP : Moins de charge réseau pour le client et le serveur.
+Optimisation des ressources : Chaque requête réseau consomme du CPU, de la bande passante et de l'énergie. Regrouper les données réduit l’empreinte écologique.
+Meilleure performance : Moins de latence pour l’utilisateur, car il y a moins de "round-trips" entre le client et le serveur.
+
 # Q13:  Proposition 2
 Description:
 Nb de requête total du parcours de l'utilisateur:
 Taille total des requêtes du parcours de l'utilisateur:
 Taille total des fichiers généré :
 
+Proposition :
+Lorsqu’un site utilise des icônes simples comme un point d’interrogation pour les quiz ou les aides contextuelles, il est possible de dessiner ces icônes directement avec du CSS pur plutôt que d’utiliser une image ou une bibliothèque d’icônes externe.
+
+Pourquoi c’est utile :
+Réduction du nombre de requêtes HTTP :
+En supprimant l’image, on évite une requête réseau supplémentaire pour charger le fichier.
+Gain en taille de fichier :
+Une icône en CSS ne pèse quasiment rien par rapport à une image (même compressée).
+Optimisation des performances :
+Le CSS est déjà chargé avec la page, donc aucun téléchargement supplémentaire n'est nécessaire.
+Amélioration de l'éco-responsabilité :
+Moins de requêtes et de données transférées signifient moins de consommation d'énergie.
+Personnalisation facile :
+L'icône peut être facilement modifiée via les styles CSS (taille, couleur, animations).
+
 # Q14:  Proposition 3
 Description:
 Nb de requête total du parcours de l'utilisateur:
 Taille total des requêtes du parcours de l'utilisateur:
 Taille total des fichiers générés :
+
+
+Suppression des liens vers les réseaux sociaux pour optimiser le code
+Proposition :
+Supprimer complètement la section des réseaux sociaux qui n’est pas utilisée. Cela permet de réduire :
+
+La taille du DOM : Une structure HTML plus légère.
+Le temps de rendu de la page : Le navigateur a moins d’éléments à analyser et afficher.
+Les éventuelles dépendances externes liées aux icônes de réseaux sociaux (comme Font Awesome).
+Pourquoi c’est utile ?
+Performances : Moins d’éléments dans le DOM = page plus rapide à analyser et à afficher.
+Éco-responsabilité : Réduction du poids des fichiers HTML et CSS, moins de traitements côté navigateur.
+Utilité : Si les liens vers les réseaux sociaux ne sont pas nécessaires, ils n’apportent aucune valeur ajoutée pour l’utilisateur.
+
+
+Actuellement la proposition 2 est implementée et la proposition 1 est en cours.
