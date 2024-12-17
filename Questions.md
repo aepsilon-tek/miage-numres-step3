@@ -22,16 +22,45 @@ Réponse:
 167kB pour reduire notre emprint carbonne
 # Q7: Noter les nom des différents fichiers qui ont été générés par la commande.
 Réponse:
-
+dist/about/index.html
+dist/index.html
+dist/assets/style-b4SyXn9O.css
+dist/assets/about-D08RWGIN.js
+dist/assets/style-Dgd37vtf.js
+dist/assets/main-BdixoVug.js
 # Q8 : Noter les nom des différents fichiers .js qui sont chargés au moment du chargement de la page.
 Réponse:
+main-BdixoVug.js
+style-Dgd37vtf.js
+content-all.ts-A0T7oseH.js
+utils-ByPfBX_0.js
+ts-A0T7oseH.js
+content-init-widget-_VnXAbSC.js
+ts-A0T7oseH.js
+content.js
+ts-loader-gzx-bIWe.js
+actions-639cd34d.js
+helpers-10be1fb3.js
+globalStyles-22fbf6ab.js
 
 # Q9 : Noter les nom des différents fichiers .js qui sont chargés au moment du changement de page.
 Réponse:
-
+about-D08RWGIN.js
+style-Dgd37vtf.js
+content-all.ts-A0T7oseH.js
+all.ts-loader-RxppLXOr.js
+content.js
+content-widget.ts-xg-qcs7m.js
+widget.ts-loader-gzx-bIWe.js
+utils-ByPfBX_0.js
+A0T7oseH.js
+content-init-widget-_VnXAbSC.js
+actions-639cd34d.js
+helpers-10be1fb3.js
+globalStyles-22fbf6ab.js
 
 # Q10: Quel est l'intérêt de lu Code Splitting d'un point de vue éco-responsable ?
-Réponse:
+Réponse:reduire l'emprint carbone
 
 
 # Q11: Ajouter le screen de votre score :
