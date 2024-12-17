@@ -100,8 +100,11 @@ L'image fait à présent : 12 B
 # Q14:  Proposition 3
 Description: En utilisant la console du développeur, il est constaté que tous les scripts de médias sociaux sont chargés, même quand ils ne sont pas utilisés.
 
-Proposition : Retarder le chargement des scripts de médias sociaux jusqu'à ce qu'ils soient nécessaires, par exemple, en les chargeant uniquement lorsqu'un utilisateur interagit avec la zone des médias sociaux.
+Proposition : Demander aux clients quel média il veut garder. Il m'a dit juste 3.
 
 Nb de requête total du parcours de l'utilisateur:
 Taille total des requêtes du parcours de l'utilisateur:
 Taille total des fichiers générés :
+
+# Q15:  Proposition 4
+Description: Modifier le endpoint de l'api en faisant la query que sur l'id mais aussi faire que l'évaluate dans le payload ne retourne que l'id car on a pas besoin du label
