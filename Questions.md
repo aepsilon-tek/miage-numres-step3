@@ -92,19 +92,32 @@ Screen:
 ![alt text](image.png)
 
 # Q12:  Proposition 1
-Description:
-Nb de requête total du parcours de l'utilisateur:
+Description: Les fonctions comme getQuestionsApi et getProposalApi effectuent des appels API systématiques, même si les données ne changent pas souvent.
+Proposition : Charger toutes les données nécessaires (questions et propositions) en une seule requête au chargement initial de la page, puis stocker les données dans le localStorage pour éviter les appels supplémentaires.
+
+
+Nb de requête total du parcours de l'utilisateur: 
 Taille total des requêtes du parcours de l'utilisateur:
 Taille total des fichiers généré :
 
+17 requêtes
+469 B transféré(s)
+1.0 MB ressources
+
+il y a 3 requetes d'évaluation qui se génère une fois les 3 questions répondu
+
 # Q13:  Proposition 2
-Description:
+Description: La fonction evaluate peut être appelée plusieurs fois si l’utilisateur répond question par question, ce qui multiplie les requêtes.
+Proposition : Collecter toutes les réponses localement, puis envoyer une seule requête d'évaluation à la fin de l’interaction utilisateur.
+
 Nb de requête total du parcours de l'utilisateur:
 Taille total des requêtes du parcours de l'utilisateur:
 Taille total des fichiers généré :
 
 # Q14:  Proposition 3
-Description:
+Description: Les requêtes getQuestionsApi et getProposalApi ne tiennent pas compte de la fraîcheur des données et les rappellent systématiquement.
+Proposition : Utiliser un mécanisme de timestamp pour déterminer si les données en cache sont encore valides (ex. : durée de validité de 10 minutes).
+
 Nb de requête total du parcours de l'utilisateur:
 Taille total des requêtes du parcours de l'utilisateur:
 Taille total des fichiers générés :

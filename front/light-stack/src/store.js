@@ -1,29 +1,18 @@
-export const baseUrl = "https://url.api";
+export const baseUrl = "https://8080-savepierre-miagenumress-nd1jdgvuigt.ws-eu117.gitpod.io";
 
 export function getQuestions() {
-  let questions;
-  if(localStorage.getItem('questions') === null){
-    questions = [];
-  }else {
-    questions = JSON.parse(localStorage.getItem('questions'));
-  }
-  return questions;
+  let questions = localStorage.getItem('questions');
+  return questions ? JSON.parse(questions) : [];
 }
 
 export function setQuestions(questions) {
-  localStorage.setItem('answers', JSON.stringify(questions));
+  localStorage.setItem('questions', JSON.stringify(questions));
 }
 
 export function getAnswers() {
-  let answers;
-  if(localStorage.getItem('answers') === null){
-    answers = [];
-  }else {
-    answers = JSON.parse(localStorage.getItem('answers'));
-  }
-  return answers;
+  let answers = localStorage.getItem('answers');
+  return answers ? JSON.parse(answers) : [];
 }
-
 
 export function saveAnswer(data) {
   const answers = getAnswers();
@@ -31,36 +20,54 @@ export function saveAnswer(data) {
   localStorage.setItem('answers', JSON.stringify(answers));
 }
 
-
 export async function getQuestionsApi() {
   const url = `${baseUrl}/quizz/questions`;
 
-  const response = await fetch(url);
+  // Vérifie si les questions existent déjà en localStorage
+  if (localStorage.getItem('questions')) {
+    console.log("Questions chargées depuis le localStorage");
+    return JSON.parse(localStorage.getItem('questions'));
+  }
 
   try {
+    const response = await fetch(url);
+
     if (!response.ok) {
       throw new Error(`Response status: ${response.status}`);
     }
 
     const json = await response.json();
+
+    // Stocker les questions dans localStorage
+    localStorage.setItem('questions', JSON.stringify(json));
     return json;
   } catch (error) {
     console.error(error.message);
   }
 }
 
-
 export async function getProposalApi(idQuestion) {
+  const proposalsKey = `proposals_${idQuestion}`;
+
+  // Vérifie si les propositions pour cette question existent en localStorage
+  if (localStorage.getItem(proposalsKey)) {
+    console.log(`Propositions pour ${idQuestion} chargées depuis le localStorage`);
+    return JSON.parse(localStorage.getItem(proposalsKey));
+  }
+
   const url = `${baseUrl}/quizz/questions/${idQuestion}/proposals`;
 
-  const response = await fetch(url);
-
   try {
+    const response = await fetch(url);
+
     if (!response.ok) {
       throw new Error(`Response status: ${response.status}`);
     }
 
     const json = await response.json();
+
+    // Stocker les propositions pour cette question dans localStorage
+    localStorage.setItem(proposalsKey, JSON.stringify(json));
     return json;
   } catch (error) {
     console.error(error.message);
@@ -71,7 +78,7 @@ export async function evaluate(proposals) {
   const url = `${baseUrl}/quizz/proposals/evaluate`;
 
   try {
-    const reponse = await fetch(url, {
+    const response = await fetch(url, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -79,9 +86,13 @@ export async function evaluate(proposals) {
       body: JSON.stringify(proposals),
     });
 
-    const resultat = await reponse.json();
-    return resultat;
-  } catch (erreur) {
-    console.error("Erreur :", erreur);
+    if (!response.ok) {
+      throw new Error(`Response status: ${response.status}`);
+    }
+
+    const result = await response.json();
+    return result;
+  } catch (error) {
+    console.error("Erreur :", error);
   }
 }
