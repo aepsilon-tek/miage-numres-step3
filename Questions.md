@@ -72,20 +72,36 @@ Réponse:Le Code Splitting réduit la taille des fichiers chargés, limitant ain
 Screen:
 ![Capture d'écran](assets/imaggg.png)
 
+
+
 # Q12:  Proposition 1
-Description:
-Nb de requête total du parcours de l'utilisateur:
-Taille total des requêtes du parcours de l'utilisateur:
-Taille total des fichiers généré :
+Description : Utiliser Local Storage pour mettre en cache les questions et propositions afin de réduire les requêtes réseau répétées.
+
+Nb de requêtes total du parcours de l'utilisateur : 16 (au lieu de 29).
+Taille totale des requêtes du parcours de l'utilisateur : Réduction significative grâce au cache (économie de 25 requêtes).
+Taille totale des requêtes du parcours de l'utilisateur : 124 B (forte réduction).
+Taille totale des fichiers générés : Inchangée.
 
 # Q13:  Proposition 2
-Description:
-Nb de requête total du parcours de l'utilisateur:
-Taille total des requêtes du parcours de l'utilisateur:
-Taille total des fichiers généré :
+Description: Remplacer les images GIF par des formats plus optimisés comme WebP  pour réduire la taille de l'image . 
+taille avant la modification : 650 B
+taille aprés la modif : 12 B
 
 # Q14:  Proposition 3
 Description:
-Nb de requête total du parcours de l'utilisateur:
-Taille total des requêtes du parcours de l'utilisateur:
-Taille total des fichiers générés :
+Limiter l'affichage des réseaux sociaux à 3 icônes en remplaçant le code par :
+<div class="topnav">
+  <a href="#" class="fa fa-facebook"></a>
+  <a href="#" class="fa fa-youtube"></a>
+  <a href="#" class="fa fa-instagram"></a>
+</div>
+Cela réduit le nombre d'icônes chargées, limitant les requêtes HTTP et optimisant la taille totale des ressources.
+
+Taille totale des requêtes du parcours de l'utilisateur:
+Réduite de 2.5 kB à 816 B.
+
+
+
+# Q15:  Proposition 4 BONUS 
+description  :Modifier la méthode evaluate pour ne retourner que les id des propositions au lieu de l'id et label ,  réduisant ainsi la taille de la réponse.
+Réduction de la taille des données retournées (seulement id renvoyé).
