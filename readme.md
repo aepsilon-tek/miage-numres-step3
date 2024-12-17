@@ -169,6 +169,3 @@ Pour cela, il suffit de :
 1. Se rendre sur votre compte personnel sur `GitHub`.
 1. Sur la page principale, se rendre sur `Contribute` > `Open pull Request`
 1. Remplir le titre de la pull request en précisant votre nom (vos noms) et `Create pull request`
-
-
-* ```./mvnw quarkus:dev -pl api``` : Lancement de l'api
