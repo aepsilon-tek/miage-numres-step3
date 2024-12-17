@@ -31,12 +31,29 @@ En mode développement (dev), les fichiers doivent rester lisibles pour facilite
 
 # Q4 : Donner la tailles des fichiers générer par la commande.
 Réponse:
+vite v6.0.3 building for production...
+✓ 30 modules transformed.
+dist/index.html                   0.46 kB │ gzip:  0.30 kB
+dist/assets/react-CHdo91hT.svg    4.13 kB │ gzip:  2.05 kB
+dist/assets/index-DZl-RcEH.css    5.66 kB │ gzip:  1.40 kB
+dist/assets/index-C_arIFqf.js   143.90 kB │ gzip: 46.34 kB
+✓ built in 727ms
 
 # Q5: Quel est l'intérêt du HMR ?
 Réponse:
+Le HMR (Hot Module Replacement) permet de voir rapidement les modifications apportées au code dans le navigateur sans recharger entièrement la page ni redémarrer le serveur web. Cela présente plusieurs avantages :
+
+Gain de temps : Les changements sont appliqués instantanément, ce qui accélère le processus de développement.
+Conservation de l'état : Lors du rechargement partiel, l'état de l'application (comme les formulaires ou variables en mémoire) reste intact, ce qui facilite le test des fonctionnalités dynamiques.
+Expérience de développement fluide : Les développeurs peuvent travailler en temps réel et voir les résultats de leurs modifications immédiatement.
 
 # Q6: Donner la tailles des fichiers générer par la commande. Pourquoi il faut être vigilant sur les libraires et autre composant qu'on ajoute dans nos applications d'un point de vue éco-responsable ?
 Réponse:
+✓ 31 modules transformed.
+dist/index.html                   0.46 kB │ gzip:  0.30 kB
+dist/assets/react-CHdo91hT.svg    4.13 kB │ gzip:  2.05 kB
+dist/assets/index-DZl-RcEH.css    5.66 kB │ gzip:  1.40 kB
+dist/assets/index-03z4V8OH.js   156.75 kB │ gzip: 51.85 kB
 
 # Q7: Noter les nom des différents fichiers qui ont été générés par la commande.
 Réponse:
