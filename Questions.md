@@ -93,6 +93,13 @@ Les fichiers générés par la commande `npm run build` sont :
 
 # Q8 : Noter les nom des différents fichiers .js qui sont chargés au moment du chargement de la page.
 Réponse:
+1. **main-BdixoVug.js**  
+2. **index.html**  
+3. **style-b4SyXn9O.css**  
+
+En plus, une tentative de requête API a échoué pour l’URL suivante :  
+`https://url.api/quizz/questions` → **net::ERR_NAME_NOT_RESOLVED**  
+Cela signifie que l’API n’a pas pu être résolue, entraînant une erreur.
 
 # Q9 : Noter les nom des différents fichiers .js qui sont chargés au moment du changement de page.
 Réponse:
