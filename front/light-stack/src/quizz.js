@@ -67,7 +67,7 @@ async function selectAnswer(e) {
   
 async function showResult() {
   quiz.innerHTML = `
-    <h1>Quizz Finis!</h1>
+    <h1>Quizz Fini!</h1>
     <p>Ton score: ${score}/${quizzData.length}</p>
   `;
 }
