@@ -31,23 +31,31 @@ Réponse: On fait appel à la donnée au besoin.
 
 
 # Q11: Ajouter le screen de votre score :
-Screen:
+Screen: ![alt text](image.png)
 
 
 # Q12:  Proposition 1
-Description:
-Nb de requête total du parcours de l'utilisateur:
+Description: Réduction du nombre de requêtes API en récupérant toutes les questions avec leurs propositions en une seule requête. Cela évite des appels réseau successifs pour chaque question.
+Nb de requête total du parcours de l'utilisateur: 1 requête (au lieu de n + 1 où n est le nombre de questions).
 Taille total des requêtes du parcours de l'utilisateur:
 Taille total des fichiers généré :
 
 # Q13:  Proposition 2
-Description:
-Nb de requête total du parcours de l'utilisateur:
-Taille total des requêtes du parcours de l'utilisateur:
-Taille total des fichiers généré :
+Description: Remplacement de l'image question.gif par un dessin en CSS pur représentant un point d'interrogation. Le cadre blanc a été ajouté autour du point d'interrogation pour conserver l'apparence visuelle tout en réduisant la taille des fichiers à charger.
+
+Nb de requête total du parcours de l'utilisateur: 1 requête en moins (suppression de l'image).
+
+Taille total des requêtes du parcours de l'utilisateur: Réduction de la taille totale des requêtes réseau (l'image de 500 KB a été supprimée).
+
+Taille total des fichiers généré :  Aucun fichier image généré. Code CSS additionnel d'environ 1 KB pour dessiner le point d'interrogation et le cadre.
 
 # Q14:  Proposition 3
-Description:
-Nb de requête total du parcours de l'utilisateur:
-Taille total des requêtes du parcours de l'utilisateur:
-Taille total des fichiers générés :
+Description: Remplacement des icônes FontAwesome par des icônes SVG directement intégrées dans le HTML ou CSS.
+Réduction du nombre d'icônes à seulement les réseaux sociaux réellement pertinents.
+Utilisation d'un display: flex pour organiser les icônes de manière simple.
+
+Nb de requête total du parcours de l'utilisateur: Réduction d’au moins 1 requête pour FontAwesome.
+
+Taille total des requêtes du parcours de l'utilisateur: Réduction de la taille des icônes.
+
+Taille total des fichiers générés : Quelques lignes de CSS et HTML ajoutées, environ 1-2 KB.
