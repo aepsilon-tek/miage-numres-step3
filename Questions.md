@@ -27,12 +27,26 @@ Non, le fichier n'est pas facilement lisible lorsqu'il est minifié. Minifier le
 
 # Q4 : Donner la tailles des fichiers générer par la commande.
 Réponse:
+dist/index.html                   0.46 kB │ gzip:  0.30 kB
+dist/assets/react-CHdo91hT.svg    4.13 kB │ gzip:  2.05 kB
+dist/assets/index-DZl-RcEH.css    5.66 kB │ gzip:  1.40 kB
+dist/assets/index-C_arIFqf.js   143.90 kB │ gzip: 46.34 kB
+✓ built in 877ms
 
 # Q5: Quel est l'intérêt du HMR ?
 Réponse:
+Le Hot Module Replacement (HMR) permet de mettre à jour les modules d'une application en cours d'exécution sans recharger toute la page. Cela améliore l'efficacité du développement en réduisant le temps de rechargement et en préservant l'état de l'application, ce qui est particulièrement utile pour le développement d'interfaces utilisateur interactives.
 
 # Q6: Donner la tailles des fichiers générer par la commande. Pourquoi il faut être vigilant sur les libraires et autre composant qu'on ajoute dans nos applications d'un point de vue éco-responsable ?
 Réponse:
+dist/index.html                   0.46 kB │ gzip:  0.30 kB
+dist/assets/react-CHdo91hT.svg    4.13 kB │ gzip:  2.05 kB
+dist/assets/index-DZl-RcEH.css    5.66 kB │ gzip:  1.40 kB
+dist/assets/index-03z4V8OH.js   156.75 kB │ gzip: 51.85 kB
+✓ built in 952ms
+
+Il faut être vigilant sur les librairies et autres composants ajoutés dans nos applications car ils peuvent augmenter significativement la taille des fichiers générés. Une taille de fichier plus grande nécessite plus de bande passante pour le transfert, ce qui augmente la consommation d'énergie et l'empreinte carbone. En choisissant des librairies légères et en éliminant les dépendances inutiles, on peut réduire l'impact environnemental de nos applications.
+
 
 # Q7: Noter les nom des différents fichiers qui ont été générés par la commande.
 Réponse:
