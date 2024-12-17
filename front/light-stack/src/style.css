@@ -225,3 +225,27 @@ button:hover {
   background: #ff6600;
   color: purple;
 }
+.css-question {
+  width: 150px;
+  height: 150px;
+  border: 5px solid black; /* Bordure du carré */
+  border-radius: 50%; /* Cercle */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white; /* Fond blanc */
+  margin: 20px auto; /* Centre horizontalement */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.css-question::after {
+  content: "?";
+  font-size: 80px; /* Taille du ? */
+  font-weight: bold;
+  color: black; /* Couleur du texte */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -45,8 +45,9 @@ document.querySelector('#app').innerHTML = `
           </div>
           <div class="rightcolumn">
             <div class="card">
-              <img src="/question.gif" width="500" height="600">
-            </div>
+  <div class="css-question"></div>
+</div>
+
         </div>
 
         <div class="footer">

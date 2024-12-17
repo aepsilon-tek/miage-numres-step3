@@ -95,18 +95,60 @@ Screen:
 
 # Q12:  Proposition 1
 Description:
+J'ai remplacé l'image question.gif par un élément HTML <div> stylisé avec CSS pur pour afficher un symbole "?" dessiné directement dans le navigateur. Cela a permis de supprimer la requête HTTP associée au chargement de l'image.
+
 Nb de requête total du parcours de l'utilisateur:
+Avant : Une requête supplémentaire pour charger question.gif.
+Après : 1 requête en moins, car le symbole est généré via CSS et aucun fichier n'est requis.
+
 Taille total des requêtes du parcours de l'utilisateur:
+Avant : Taille de l'image question.gif (693 Ko).
+Après : Taille réduite de la page globale, car le CSS remplace l'image sans ajout de ressources externes.
+
+Gain estimé : Taille de l'image économisée.
+
 Taille total des fichiers généré :
+
+Le symbole "?" est dessiné via CSS intégré, donc aucun fichier supplémentaire n'est généré.
+Gain en espace disque : Aucun fichier image n'est stocké ou généré.
+![alt text](image-1.png)
 
 # Q13:  Proposition 2
 Description:
+J'ai optimisé le chargement des questions et des propositions pour réduire le nombre de requêtes API ainsi que la taille des données échangées avec le serveur.
+
+- Pagination des requêtes : Au lieu de charger toutes les questions en une seule requête, les questions sont récupérées page par page grâce à une pagination côté serveur. Ceci permet un chargement progressif des questions, réduisant la taille des données échangées lors de chaque appel.
+
+-Mise en cache local des données : Les réponses des appels API (questions et propositions) sont stockées dans le localStorage afin d'éviter des requêtes redondantes. Si l'utilisateur revient à une question ou une proposition déjà chargée, les données sont récupérées depuis le cache local plutôt que de refaire un appel au serveur.
+
+- Lazy loading des propositions : Les propositions sont récupérées uniquement lorsque l'utilisateur atteint une question spécifique, au lieu de les charger toutes en amont.
+
 Nb de requête total du parcours de l'utilisateur:
+- Avant optimisation : 1 requête pour récupérer toutes les questions + 1 requête par question pour récupérer les propositions (donc 1 requête pour les questions et 3 pour les propositions).
+- Après optimisation : 1 requête pour récupérer toutes les questions + 3 requêtes pour récupérer les propositions au fur et à mesure (lorsque l'utilisateur répond, une requête est envoyée uniquement pour la proposition de cette question spécifique).
+
 Taille total des requêtes du parcours de l'utilisateur:
-Taille total des fichiers généré :
+Avant optimisation :
+La taille totale des requêtes est élevée car toutes les données (questions + propositions) sont chargées en une seule fois.
+Après optimisation :
+La taille des requêtes est réduite car : Les questions sont paginées et les propositions ne sont chargées qu'à la demande.
+Les données déjà chargées sont récupérées depuis le cache local.
+
+Taille total des fichiers généré : La taille des fichiers générés reste similaire, mais l'efficacité du chargement est améliorée grâce au lazy loading et à la pagination.
 
 # Q14:  Proposition 3
 Description:
+
+Utiliser l'optimisation du caching côté serveur et le préchargement des données pour réduire le nombre de requêtes.
+
 Nb de requête total du parcours de l'utilisateur:
+Avant : 4 requêtes
+Après : 1 requête (préchargement)
+
 Taille total des requêtes du parcours de l'utilisateur:
+Avant : Plus petite taille, mais plus de requêtes
+Après : Taille plus grande pour 1 requête unique
+
 Taille total des fichiers générés :
+Avant : Moyenne (génération multiple)
+Après : Fichier plus volumineux (préchargé)

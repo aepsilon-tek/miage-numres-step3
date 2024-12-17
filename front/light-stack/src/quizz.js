@@ -1,73 +1,93 @@
-import { evaluate, getAnswers, getProposalApi, getQuestionsApi, saveAnswer } from './store.js';
-import './style.css';
+import { evaluate, getProposalApi, getQuestionsApi } from "./store.js";
+import "./style.css";
 
-export let quizzData;
-export let currentQuestion;
-export let score;
+export let quizzData = [];
+export let currentQuestion = 0;
+export let score = 0;
+let currentPage = 1; // Pour la pagination
+
 let questionElement;
 let proposalsElement;
 
-export function initQuizz(questions) {
+export function initQuizz() {
   quizzData = [];
-  localStorage.clear();
-  
-  questionElement = document.getElementById("question");
-  proposalsElement = document.getElementById("proposals");
-    
   currentQuestion = 0;
   score = 0;
+  currentPage = 1;
 
+  localStorage.clear();
+
+  questionElement = document.getElementById("question");
+  proposalsElement = document.getElementById("proposals");
+
+  loadNextPage();
+}
+
+// Fonction pour charger une page de questions
+async function loadNextPage() {
+  const newQuestions = await getQuestionsApi(currentPage);
+
+  if (newQuestions.length === 0) {
+    showResult();
+    return;
+  }
+
+  quizzData = quizzData.concat(newQuestions);
+  currentPage++;
   showQuestion();
 }
-  
+
+// Afficher la question actuelle
 async function showQuestion() {
-  quizzData = await getQuestionsApi();
-    
-  for (let i = 0; i < quizzData.length; i++) {
-    let proposals = await getProposalApi(quizzData[i].id);
-    quizzData[i].proposals = proposals;
+  if (currentQuestion >= quizzData.length) {
+    await loadNextPage();
+    return;
   }
 
   const question = quizzData[currentQuestion];
-  questionElement.innerText = question.label
-  
+
+  // Récupérer les propositions pour la question courante
+  if (!question.proposals) {
+    question.proposals = await getProposalApi(question.id);
+  }
+
+  questionElement.innerText = question.label;
+
   proposalsElement.innerHTML = "";
-  question.proposals.forEach(proposal => {
+  question.proposals.forEach((proposal) => {
     const button = document.createElement("button");
     button.innerText = proposal.label;
     proposalsElement.appendChild(button);
     button.addEventListener("click", selectAnswer);
   });
 }
-  
+
+// Sélectionner une réponse et évaluer
 async function selectAnswer(e) {
-  const selectedButton = e.target;
-  let proposals = quizzData[currentQuestion].proposals;
+  const selectedLabel = e.target.innerText;
+  const question = quizzData[currentQuestion];
 
-  let chosedProposal = [];
-  for (let i = 0; i < proposals.length; i++) {
-      
-    if (selectedButton.innerText === proposals[i].label) {
-      chosedProposal.push(proposals[i]);
-    }
-  }
+  const chosenProposal = question.proposals.find(
+    (proposal) => proposal.label === selectedLabel
+  );
 
-  let point = await evaluate(chosedProposal);
+  const point = await evaluate([chosenProposal]);
+  score += point;
 
-  score = score + point;
-  
   currentQuestion++;
-  
+
   if (currentQuestion < quizzData.length) {
     showQuestion();
   } else {
     showResult();
   }
 }
-  
-async function showResult() {
-  quiz.innerHTML = `
-    <h1>Quizz Finis!</h1>
-    <p>Ton score: ${score}/${quizzData.length}</p>
+
+// Afficher le résultat final
+function showResult() {
+  const quizElement = document.getElementById("quiz");
+  quizElement.innerHTML = `
+    <h1>Quizz Terminé !</h1>
+    <p>Ton score : ${score}/${quizzData.length}</p>
   `;
 }

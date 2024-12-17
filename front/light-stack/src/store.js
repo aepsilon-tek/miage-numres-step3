@@ -1,69 +1,46 @@
 export const baseUrl = "https://8080-bakarouhaja-miagenumres-vvv1hy4orel.ws-eu117.gitpod.io";
 
-export function getQuestions() {
-  let questions;
-  if(localStorage.getItem('questions') === null){
-    questions = [];
-  }else {
-    questions = JSON.parse(localStorage.getItem('questions'));
+export async function getQuestionsApi(page = 1) {
+  // Vérifier le cache local avant d'appeler l'API
+  const cachedQuestions = localStorage.getItem(`questions_page_${page}`);
+  if (cachedQuestions) {
+    return JSON.parse(cachedQuestions);
   }
-  return questions;
-}
 
-export function setQuestions(questions) {
-  localStorage.setItem('answers', JSON.stringify(questions));
-}
-
-export function getAnswers() {
-  let answers;
-  if(localStorage.getItem('answers') === null){
-    answers = [];
-  }else {
-    answers = JSON.parse(localStorage.getItem('answers'));
-  }
-  return answers;
-}
-
-
-export function saveAnswer(data) {
-  const answers = getAnswers();
-  answers.push(data);
-  localStorage.setItem('answers', JSON.stringify(answers));
-}
-
-
-export async function getQuestionsApi() {
-  const url = `${baseUrl}/quizz/questions`;
-
-  const response = await fetch(url);
-
+  const url = `${baseUrl}/quizz/questions?page=${page}`;
   try {
-    if (!response.ok) {
-      throw new Error(`Response status: ${response.status}`);
-    }
+    const response = await fetch(url);
+    if (!response.ok) throw new Error(`Response status: ${response.status}`);
 
-    const json = await response.json();
-    return json;
+    const questions = await response.json();
+
+    // Stocker les questions dans le cache local
+    localStorage.setItem(`questions_page_${page}`, JSON.stringify(questions));
+    return questions;
   } catch (error) {
-    console.error(error.message);
+    console.error("Erreur lors de la récupération des questions :", error.message);
+    return [];
   }
 }
-
 
 export async function getProposalApi(idQuestion) {
+  const cachedProposals = localStorage.getItem(`proposals_${idQuestion}`);
+  if (cachedProposals) {
+    return JSON.parse(cachedProposals);
+  }
+
   const url = `${baseUrl}/quizz/questions/${idQuestion}/proposals`;
 
-  const response = await fetch(url);
-
   try {
-    if (!response.ok) {
-      throw new Error(`Response status: ${response.status}`);
-    }
+    const response = await fetch(url);
+    if (!response.ok) throw new Error(`Response status: ${response.status}`);
 
-    const json = await response.json();
-    return json;
+    const proposals = await response.json();
+    localStorage.setItem(`proposals_${idQuestion}`, JSON.stringify(proposals)); // Mise en cache
+    return proposals;
   } catch (error) {
-    console.error(error.message);
+    console.error("Erreur lors de la récupération des propositions :", error.message);
+    return [];
   }
 }
 
@@ -71,7 +48,7 @@ export async function evaluate(proposals) {
   const url = `${baseUrl}/quizz/proposals/evaluate`;
 
   try {
-    const reponse = await fetch(url, {
+    const response = await fetch(url, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -79,9 +56,9 @@ export async function evaluate(proposals) {
       body: JSON.stringify(proposals),
     });
 
-    const resultat = await reponse.json();
-    return resultat;
-  } catch (erreur) {
-    console.error("Erreur :", erreur);
+    return await response.json();
+  } catch (error) {
+    console.error("Erreur d'évaluation :", error.message);
+    return 0; // Retourner 0 en cas d'erreur
   }
 }
