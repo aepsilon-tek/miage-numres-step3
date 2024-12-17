@@ -17,21 +17,21 @@ Réponse: L'intérêt du HMR permet de charger la page instantanément après av
 Réponse: La tailles des fichiers générer par la commande est de 167 KB. Il faut être vigilant sur les libraires et autre composant qu'on ajoute dans nos applications car ça peut ralentir la vitesse de chargement du site et on peut vite avoir un gros volume de fichiers pour une petite fonctionnalités fait avec les libraires, il faut se demander si on a vraiment l'utilité.
 
 # Q7: Noter les nom des différents fichiers qui ont été générés par la commande.
-Réponse:
+Réponse:Les fichiers qui ont été générés ou  transformer par la commande sont index.html, style-b4SyXn90.css, about-D08RWGIN.js, style-Dgd37vtf.js et main-BdixoVug.js 
 
 # Q8 : Noter les nom des différents fichiers .js qui sont chargés au moment du chargement de la page.
-Réponse:
+Réponse: ![alt text](image.png)
 
 # Q9 : Noter les nom des différents fichiers .js qui sont chargés au moment du changement de page.
-Réponse:
+Réponse: ![alt text](image-1.png)
 
 
 # Q10: Quel est l'intérêt de lu Code Splitting d'un point de vue éco-responsable ?
-Réponse:
+Réponse: L'intérêt de lu Code Splitting est qu'il réduit la quantité de données transférées et donc réduit la consommation d'énergie, il améliore également la vitesse de chargement des pages
 
 
 # Q11: Ajouter le screen de votre score :
-Screen:
+Screen: ![alt text](image-2.png)
 
 
 # Q12:  Proposition 1
