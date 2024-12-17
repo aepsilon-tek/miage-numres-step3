@@ -48,8 +48,8 @@ Amélioration de la longévité du matériel : Fonctionnement plus fluide sur de
 Accessibilité : Moins d'impact pour les utilisateurs avec une connexion lente ou limitée.
 
 # Q11: Ajouter le screen de votre score :
-Screen:
-
+Screen: 
+![alt text](image-3.jpg)
 
 # Q12:  Proposition 1
 Description:
