@@ -81,19 +81,19 @@ Screen:
 
 
 # Q12:  Proposition 1
-Description:
-Nb de requête total du parcours de l'utilisateur:
-Taille total des requêtes du parcours de l'utilisateur:
-Taille total des fichiers généré :
+Description: 
 
+Actuellement, une requête API est faite pour chaque question afin de récupérer ses propositions. Cela entraîne un nombre important de requêtes HTTP. Une optimisation consiste à modifier l'API pour récupérer toutes les questions avec leurs propositions dans une seule requête. 
+
+Nombre de requêtes total : Réduit de N + 1 requêtes (N questions + 1 pour les questions) à 1 seule requête.
+Taille totale des requêtes du parcours utilisateur : Légèrement augmentée pour une seule requête, mais fortement optimisée en temps.
+Taille totale des fichiers générés : Inchangée.
+
+  
 # Q13:  Proposition 2
-Description:
-Nb de requête total du parcours de l'utilisateur:
-Taille total des requêtes du parcours de l'utilisateur:
-Taille total des fichiers généré :
+Description :
+La taille des fichiers CSS et JS peut être réduite davantage en appliquant des outils de minification et tree shaking sur le code.
 
-# Q14:  Proposition 3
-Description:
-Nb de requête total du parcours de l'utilisateur:
-Taille total des requêtes du parcours de l'utilisateur:
-Taille total des fichiers générés :
+Taille totale des fichiers générés : Réduction des fichiers CSS et JS (par exemple de 30% à 50%).
+Impact sur les performances : Temps de chargement réduit.
+Nb de requêtes total : Inchangé.
