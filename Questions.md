@@ -67,10 +67,14 @@ Screen:
 ![image.png](image.png)
 
 # Q12:  Proposition 1
-Description:
-Nb de requête total du parcours de l'utilisateur:
+Description: réduir le nombre de requetes.
+Les quesitons et leurs propositions sont loadées à chaque fois qu'on pass à la prochaine étape
+On peut ajouter une fonction qui permet de loader toutes les questions et leurs propositions et on les stock dans l'objet : quizzData
+
+Nb de requête total du parcours de l'utilisateur: 7
 Taille total des requêtes du parcours de l'utilisateur:
 Taille total des fichiers généré :
+
 
 # Q13:  Proposition 2
 Description:
