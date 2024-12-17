@@ -50,16 +50,27 @@ Il est crucial de rester vigilant sur les librairies et composants ajoutés dans
 
 # Q7: Noter les nom des différents fichiers qui ont été générés par la commande.
 Réponse:
+dist/about/index.html
+dist/index.html
+dist/assets/style-b4SyXn9O.css
+dist/assets/about-D08RWGIN.js
+dist/assets/style-Dgd37vtf.js
+dist/assets/main-BdixoVug.js
 
 # Q8 : Noter les nom des différents fichiers .js qui sont chargés au moment du chargement de la page.
 Réponse:
+main-BdixoVug.js
+style-Dgd37vtf.js
 
 # Q9 : Noter les nom des différents fichiers .js qui sont chargés au moment du changement de page.
 Réponse:
+about-D08RWGIN.js
+style-Dgd37vtf.js
 
 
 # Q10: Quel est l'intérêt de lu Code Splitting d'un point de vue éco-responsable ?
 Réponse:
+Le Code Splitting permet de réduire la taille des fichiers chargés en divisant le code en modules plus petits et en ne chargeant que les fichiers nécessaires à une page donnée. Cela signifie que lorsqu'un utilisateur accède à une page, seul le code lié à cette page est chargé, contrairement au chargement d'un fichier global contenant tout le code de l'application. Cette approche réduit significativement le volume de données transférées, ce qui diminue la consommation de bande passante et l'énergie requise pour le chargement. Cela améliore également les performances en accélérant les temps de chargement, particulièrement utile sur des appareils aux ressources limitées ou dans des environnements à faible débit. Du point de vue éco-responsable, cela limite la consommation d'énergie des serveurs, des infrastructures réseau et des appareils clients, contribuant ainsi à réduire l'empreinte carbone globale de l'application.
 
 
 # Q11: Ajouter le screen de votre score :
