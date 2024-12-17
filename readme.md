@@ -133,14 +133,12 @@ Lightouse est un outils présent dans le navigateur Chrome qui se repose sur Axe
 1. Retourner à la racine du projet :  `cd /workspace/miage-numres-step3/`
 2. Lancer l'api : `./mvnw quarkus:dev -pl api`
 3. Clicker sur "make public"
-4. Choisir Navigation, Bureau, Accessibilité
 5. Dans VS Code : 
     1. Aller dans l'onglet PORTS
     2. Copier l'Address qui commence par `https://8080...`
 5. Dans le fichier store.js `front/light-stack/src/store.js`
     1. Modifier la ligne : `export const baseUrl = "https://url.api";` par l'url que vous venez de copier`export const baseUrl = "https://8080...";`
-7. Répondre à la question Q11 du fichier **_Questions.md_**
-8. Commiter  & Pusher le fichier **_Questions.md_**
+7. Faite le Quizz !
 
 # Amélioration
 
@@ -152,6 +150,7 @@ Pour chacune des propositions que vous faites, vous devez :
   1. Decrire la proposition dans le fichier **_Questions.md_**
   1. Implementer votre proposition
   1. Tester la proposition
+  1. Indiquez soit le gain en tailles de fichier, soit en nombre de requête soit en taille de requête.
   1. Commiter  & Pusher le code et le  fichier **_Questions.md_**
 
 ## Proposition 1
