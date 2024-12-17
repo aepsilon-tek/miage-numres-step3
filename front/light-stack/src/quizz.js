@@ -44,18 +44,17 @@ async function selectAnswer(e) {
   const selectedButton = e.target;
   let proposals = quizzData[currentQuestion].proposals;
 
-  // let chosedProposal = [];
+  let chosedProposal = [];
   for (let i = 0; i < proposals.length; i++) {
       
     if (selectedButton.innerText === proposals[i].label) {
-      // chosedProposal.push(proposals[i]);
-      saveAnswer(proposals[i]);
+      chosedProposal.push(proposals[i]);
     }
   }
 
-  // let point = await evaluate(chosedProposal);
+  let point = await evaluate(chosedProposal);
 
-  // score = score + point;
+  score = score + point;
   
   currentQuestion++;
   
@@ -67,7 +66,6 @@ async function selectAnswer(e) {
 }
   
 async function showResult() {
-  let score = await evaluate(getAnswers());
   quiz.innerHTML = `
     <h1>Quizz Finis!</h1>
     <p>Ton score: ${score}/${quizzData.length}</p>
