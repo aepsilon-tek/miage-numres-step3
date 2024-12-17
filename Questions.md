@@ -43,24 +43,38 @@ main-FT3QBEBB.js      | main          | 208.48 kB |                56.93 kB
 polyfills-FFHMD2TL.js | polyfills     |  34.52 kB |                11.28 kB
 styles-5INURTSO.css   | styles        |   0 bytes |                 0 bytes
                       | Initial total | 243.00 kB |                68.21 kB
-                      
+
 # Q7: Noter les nom des différents fichiers qui ont été générés par la commande.
 Réponse:
+- dist/about/index.html	
+- dist/index.html	
+- dist/assets/style-b4SyXn9O.css	
+- dist/assets/about-D08RWGIN.js	
+- dist/assets/style-Dgd37vtf.js	
+- dist/assets/main-BdixoVug.js
 
 # Q8 : Noter les nom des différents fichiers .js qui sont chargés au moment du chargement de la page.
 Réponse:
+main-BdixoVug.js
+style-Dgd37vtf.js
 
 # Q9 : Noter les nom des différents fichiers .js qui sont chargés au moment du changement de page.
 Réponse:
-
+about-D08RWGIN.js
+style-Dgd37vtf.js
 
 # Q10: Quel est l'intérêt de lu Code Splitting d'un point de vue éco-responsable ?
 Réponse:
-
+Le Code Splitting réduit la taille des fichiers chargés, ce qui :
+- Diminue la consommation de bande passante.
+- Réduit la consommation d'énergie des serveurs et appareils utilisateurs.
+- Améliore les performances en ne chargeant que le nécessaire.
+Cela limite l'impact environnemental lié au transfert et au traitement des données. 
 
 # Q11: Ajouter le screen de votre score :
 Screen:
-
+Screen:
+![alt text](image.png)
 
 # Q12:  Proposition 1
 Description:
