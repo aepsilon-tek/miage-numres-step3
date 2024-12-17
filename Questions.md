@@ -89,6 +89,7 @@ ici "style-Dgd37vtf.js" reste le même, donc inutile de le recharger. Donc nous 
 # Q11: Ajouter le screen de votre score :
 Screen:
 
+![alt text](image.png)
 
 # Q12:  Proposition 1
 Description:
