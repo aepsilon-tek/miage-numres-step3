@@ -74,13 +74,13 @@ Taille total des requêtes du parcours de l'utilisateur:C'est la nombre de reque
 Taille total des fichiers généré : C'est la taille d'avant moins le taille de l'image.
 
 # Q13:  Proposition 2
-Description:
+Description:On garde que trois reseaux social suivant ce qui est demander par le client 
 Nb de requête total du parcours de l'utilisateur:
 Taille total des requêtes du parcours de l'utilisateur:
-Taille total des fichiers généré :
+Taille total des fichiers généré :moint de taill
 
 # Q14:  Proposition 3
-Description:
+Description: On peut récuperer qu'une seule fois les questions et les propositions donc les mettre en cache au lieu de les recupérer a chaque fois que l'utilisateur clique sur une réponse ou sur le quizz.
 Nb de requête total du parcours de l'utilisateur:
-Taille total des requêtes du parcours de l'utilisateur:
+Taille total des requêtes du parcours de l'utilisateur: 1 seule requête au lieu de plusieurs
 Taille total des fichiers générés :
