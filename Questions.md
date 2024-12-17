@@ -103,7 +103,11 @@ Cela signifie que l’API n’a pas pu être résolue, entraînant une erreur.
 
 # Q9 : Noter les nom des différents fichiers .js qui sont chargés au moment du changement de page.
 Réponse:
+1. **about/index.html**  
+2. **style-b4SyXn9O.css**  
+3. **about-D08RWGIN.js**  
 
+Ces fichiers sont spécifiques à la page `/about` et démontrent l'efficacité du **Code Splitting**, car seuls les fichiers nécessaires sont chargés dynamiquement lors de la navigation.
 
 # Q10: Quel est l'intérêt de lu Code Splitting d'un point de vue éco-responsable ?
 Réponse:
