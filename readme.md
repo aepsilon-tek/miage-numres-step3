@@ -24,7 +24,7 @@ Une application web consomme une API Rest Quarkus  qui s'appuie sur une base de 
 
 ## TP3 - Choix stack Front-End
 
-Votre client  veut une api de quizz en français qui :
+Votre client  veut une Application de quizz en français qui :
 * Permet à un utilisateur de passer le quizz.
 * Indique le score du joueur à la fin du quizz.
 * Met en avant tout ces réseaux sociaux.
