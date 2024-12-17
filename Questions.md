@@ -8,16 +8,16 @@ Réponse: 243.00 kB
 Réponse: Le fichier n'est pas lisible et l'intéret est de consommer moins de ressources en utilisant moins d'espace ça a donc moins d'impact carbone. On ne minifie pas les fichiers générer en mode dev car sinon cela est illisible pour nous et on ne comprend rien au code du coup.
 
 # Q4 : Donner la tailles des fichiers générer par la commande.
-Réponse: 
+Réponse: 154,15 kB
 
 # Q5: Quel est l'intérêt du HMR ?
-Réponse:
+Réponse: L'intéret est de recharger juste les parties modifié de la page. Cela permet un gain de temps considérable et une conservation de l'état de l'application.
 
 # Q6: Donner la tailles des fichiers générer par la commande. Pourquoi il faut être vigilant sur les libraires et autre composant qu'on ajoute dans nos applications d'un point de vue éco-responsable ?
-Réponse:
+Réponse: 167 kB
 
 # Q7: Noter les nom des différents fichiers qui ont été générés par la commande.
-Réponse:
+Réponse: 
 
 # Q8 : Noter les nom des différents fichiers .js qui sont chargés au moment du chargement de la page.
 Réponse:
