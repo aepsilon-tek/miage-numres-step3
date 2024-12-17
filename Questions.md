@@ -17,17 +17,17 @@ Réponse: L'affichage des modifications du code en l'instant T sans avoir besoin
 Réponse: 167 kB | 55,6 kB. Pour ne pas trop charger la bande passante.
 
 # Q7: Noter les nom des différents fichiers qui ont été générés par la commande.
-Réponse:
+Réponse: index.html, index.html, style-b4SyXn9O.css, about-D08RWGIN.js, style-Dgd37vtf.js, main-BdixoVug.js
 
 # Q8 : Noter les nom des différents fichiers .js qui sont chargés au moment du chargement de la page.
-Réponse:
+Réponse: main-BdixoVug.js, style-Dgd37vtf.js
 
 # Q9 : Noter les nom des différents fichiers .js qui sont chargés au moment du changement de page.
-Réponse:
+Réponse: about-D08RWGIN.js, style-Dgd37vtf.js
 
 
 # Q10: Quel est l'intérêt de lu Code Splitting d'un point de vue éco-responsable ?
-Réponse:
+Réponse: On fait appel à la donnée au besoin.
 
 
 # Q11: Ajouter le screen de votre score :
