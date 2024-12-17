@@ -1,11 +1,29 @@
 # Q1 : Donner la tailles des fichiers générer par la commande.
 Réponse:
 
+Initial chunk files | Names         |  Raw size
+polyfills.js        | polyfills     |  90.20 kB | 
+main.js             | main          |  18.18 kB | 
+styles.css          | styles        |  95 bytes | 
+
+                    | Initial total | 108.48 kB
+
+Application bundle generation complete. [2.234 seconds]
+
 # Q2 : Donner la tailles des fichiers générer par la commande.
 Réponse:
+Initial chunk files   | Names         |  Raw size | Estimated transfer size
+main-FT3QBEBB.js      | main          | 208.48 kB |                56.93 kB
+polyfills-FFHMD2TL.js | polyfills     |  34.52 kB |                11.28 kB
+styles-5INURTSO.css   | styles        |   0 bytes |                 0 bytes
 
-# Q3 : Est-ce que le fichier est lisible ? Quel est l'intêret de minifier les fichiers d'un point de vue éco-responsable ? Pourquoi on ne minifie pas les fichiers générer en mode dev ?
+                      | Initial total | 243.00 kB |                68.21 kB
+
+Application bundle generation complete. [9.304 seconds]
+
+# Q3 : Est-ce que le fichier est lisible ? Quel est l'intérêt de minifier les fichiers d'un point de vue éco-responsable ? Pourquoi on ne minifie pas les fichiers générés en mode dev ?
 Réponse:
+Non, le fichier n'est pas facilement lisible lorsqu'il est minifié. Minifier les fichiers réduit leur taille, ce qui diminue la bande passante nécessaire pour les transférer et réduit ainsi l'empreinte carbone. En mode développement, les fichiers ne sont pas minifiés pour faciliter le débogage et la lecture du code par les développeurs.
 
 # Q4 : Donner la tailles des fichiers générer par la commande.
 Réponse:
