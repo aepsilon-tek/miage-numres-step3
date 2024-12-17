@@ -70,7 +70,7 @@ Réponse:Le Code Splitting réduit la taille des fichiers chargés, limitant ain
 
 # Q11: Ajouter le screen de votre score :
 Screen:
-
+![Capture d'écran](assets/imaggg.png)
 
 # Q12:  Proposition 1
 Description:
