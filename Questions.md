@@ -78,19 +78,19 @@ Screen:![alt text](image.png)
 
 
 # Q12:  Proposition 1
-Description:
-Nb de requête total du parcours de l'utilisateur:
-Taille total des requêtes du parcours de l'utilisateur:
-Taille total des fichiers généré :
+Description: Optimiser le chargement des ressources en mettant en place un système de lazy loading pour les images non critiques et les composants non visibles directement à l'écran. Cela permettra de réduire les requêtes initiales et d'améliorer le temps de chargement de la page.
+Nb de requête total du parcours de l'utilisateur: Réduction de 3 requêtes (grâce au chargement différé des images non visibles).
+Taille total des requêtes du parcours de l'utilisateur: Réduction de ~20 kB (en évitant le chargement immédiat des images lourdes).
+Taille total des fichiers généré : Inchangée car le lazy loading agit uniquement sur le moment où les ressources sont chargées.
 
 # Q13:  Proposition 2
-Description:
-Nb de requête total du parcours de l'utilisateur:
-Taille total des requêtes du parcours de l'utilisateur:
-Taille total des fichiers généré :
+Description: Mettre en place le code splitting pour diviser les fichiers JavaScript en modules plus petits et charger uniquement les fichiers nécessaires à chaque page. Cela réduit le poids des fichiers JavaScript chargés sur chaque vue.
+Nb de requête total du parcours de l'utilisateur: Augmentation de 2 requêtes (une par page, au lieu d'un fichier central).
+Taille total des requêtes du parcours de l'utilisateur: Réduction de ~50 % (passant de 3.20 kB à environ 1.5 kB par page grâce au découpage des fichiers).
+Taille total des fichiers généré : Légère augmentation (environ 3.5 kB au total, car chaque page a son propre fichier JavaScript).
 
 # Q14:  Proposition 3
-Description:
-Nb de requête total du parcours de l'utilisateur:
-Taille total des requêtes du parcours de l'utilisateur:
-Taille total des fichiers générés :
+Description: Minifier les fichiers CSS et JavaScript pour réduire leur taille. Cela consiste à supprimer les espaces, les commentaires et raccourcir les noms des variables pour alléger les fichiers finaux.
+Nb de requête total du parcours de l'utilisateur: Inchangé (le nombre de fichiers reste identique).
+Taille total des requêtes du parcours de l'utilisateur: Réduction de ~30 % (passant de 3.20 kB à environ 2.2 kB pour le JavaScript et une réduction similaire pour les fichiers CSS).
+Taille total des fichiers générés : Réduction de ~1 kB pour chaque fichier JS et CSS minifié.
