@@ -50,16 +50,33 @@ Il faut être vigilant sur les librairies et autres composants ajoutés dans nos
 
 # Q7: Noter les nom des différents fichiers qui ont été générés par la commande.
 Réponse:
+dist/about/index.html           0.53 kB │ gzip: 0.32 kB
+dist/index.html                 0.65 kB │ gzip: 0.37 kB
+dist/assets/style-b4SyXn9O.css  2.18 kB │ gzip: 0.79 kB
+dist/assets/about-D08RWGIN.js   0.15 kB │ gzip: 0.16 kB
+dist/assets/style-Dgd37vtf.js   0.71 kB │ gzip: 0.40 kB
+dist/assets/main-BdixoVug.js    3.20 kB │ gzip: 1.14 kB
+✓ built in 112ms
+
 
 # Q8 : Noter les nom des différents fichiers .js qui sont chargés au moment du chargement de la page.
 Réponse:
+main-BdixoVug.js
+style-Dgd37vtf.js
+content.js
+executor.js
 
 # Q9 : Noter les nom des différents fichiers .js qui sont chargés au moment du changement de page.
 Réponse:
+about-D08RWGIN.js
+style-Dgd37vtf.js
+content.js
+executor.js
 
-
-# Q10: Quel est l'intérêt de lu Code Splitting d'un point de vue éco-responsable ?
+# Q10: Quel est l'intérêt du Code Splitting d'un point de vue éco-responsable ?
 Réponse:
+Le Code Splitting permet de diviser le code en morceaux qui peuvent être chargés à la demande. Ca réduit la quantité de code initialement chargée, ce qui diminue le temps de chargement et la bande passante nécessaire ca réduit la consommation d'énergie et l'empreinte carbone, car moins de données sont transférées et traitées par les serveurs et les appareils des utilisateurs.
+
 
 
 # Q11: Ajouter le screen de votre score :
