@@ -134,22 +134,56 @@ Le **Code Splitting** présente plusieurs avantages importants pour l'éco-respo
 En résumé, le **Code Splitting** améliore la performance tout en réduisant l'impact environnemental de l'application en minimisant la quantité de données échangées et la consommation d'énergie nécessaire à leur traitement.
 # Q11: Ajouter le screen de votre score :
 Screen:
-
+**Rapport d'accessibilité global** :
+   - L'analyse a montré une note d'accessibilité de **67/100**.
+   ![alt text](image.png)
 
 # Q12:  Proposition 1
-Description:
-Nb de requête total du parcours de l'utilisateur:
-Taille total des requêtes du parcours de l'utilisateur:
-Taille total des fichiers généré :
+**Description :**  
+Au lieu d'utiliser des images pour des éléments simples, les créer en CSS (par exemple, en utilisant `background-image`, `gradients`, ou `shapes`) afin de réduire la taille des fichiers et optimiser le chargement.
+
+**Nb de requêtes total du parcours de l'utilisateur :**  
+Avant optimisation : Plusieurs requêtes pour chaque image.  
+Après optimisation : Moins de requêtes grâce à l'utilisation de CSS.
+
+**Taille totale des requêtes du parcours de l'utilisateur :**  
+Avant optimisation : Les images augmentent la taille des requêtes.  
+Après optimisation : Réduction de la taille des requêtes grâce à l'utilisation de CSS.
+
+**Taille totale des fichiers générés :**  
+Avant optimisation : Taille importante des fichiers en raison des images.  
+Après optimisation : Réduction de la taille des fichiers grâce au remplacement des images par des générateurs CSS.
 
 # Q13:  Proposition 2
 Description:
-Nb de requête total du parcours de l'utilisateur:
-Taille total des requêtes du parcours de l'utilisateur:
-Taille total des fichiers généré :
+![alt text](image-1.png)
+**Description :**  
+Remplacer l'image **`question.gif`** par une version optimisée en **`.webp`** afin de réduire la taille du fichier et améliorer les performances du site.
+
+**Nb de requêtes total du parcours de l'utilisateur :**  
+Avant optimisation : 1 requête pour charger **`question.gif`**.  
+Après optimisation : 1 requête pour charger **`question.webp`**.
+
+**Taille totale des requêtes du parcours de l'utilisateur :**  
+Avant optimisation : La taille du fichier **`question.gif`** est de **500 KB**.  
+Après optimisation : La taille du fichier **`question.webp`** est de **150 KB** (réduction de 70%).
+
+**Taille totale des fichiers générés :**  
+Avant optimisation : Taille du fichier **`question.gif`** = **500 KB**.  
+Après optimisation : Taille du fichier **`question.webp`** = **150 KB**.
 
 # Q14:  Proposition 3
-Description:
-Nb de requête total du parcours de l'utilisateur:
-Taille total des requêtes du parcours de l'utilisateur:
-Taille total des fichiers générés :
+Description :
+Mettre en cache les questions et propositions du quiz pour éviter de les récupérer à chaque interaction, réduisant ainsi la charge sur le serveur et améliorant la performance.
+
+Au lieu de faire une requête à chaque fois qu'un utilisateur clique sur une réponse ou navigue dans le quiz, les questions et propositions doivent être récupérées une seule fois et mises en cache localement.
+Nb de requêtes total du parcours de l'utilisateur :
+Avant optimisation : Plusieurs requêtes pour récupérer les questions et propositions à chaque clic ou changement de page.
+Après optimisation : Une seule requête pour récupérer toutes les questions et propositions au début, stockées en cache pour toute la session.
+
+Taille totale des requêtes du parcours de l'utilisateur :
+Avant optimisation : Nombre élevé de requêtes, chacune récupérant des données de questions et propositions.
+Après optimisation : Une seule requête, réduisant considérablement le nombre de requêtes réseau.
+
+Taille totale des fichiers générés :
+La taille des fichiers générés reste plus petite en raison de l'absence de requêtes répétées et de la réduction des appels au serveur.
