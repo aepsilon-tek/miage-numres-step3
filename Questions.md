@@ -77,7 +77,7 @@ Le **Code Splitting** permet de charger uniquement les fichiers nécessaires pou
 # Q11: Ajouter le screen de votre score :
 Screen:
 
-![Capture d'écran Q11](Capture d’écran 2024-12-17 à 14.39.01.png)
+![Capture d'écran Q11](./Capture%20d’écran%202024-12-17%20à%2014.39.01.png)
 
 
 # Q12:  Proposition 1
