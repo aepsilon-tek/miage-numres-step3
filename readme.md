@@ -142,6 +142,28 @@ Lightouse est un outils présent dans le navigateur Chrome qui se repose sur Axe
 7. Répondre à la question Q11 du fichier **_Questions.md_**
 8. Commiter  & Pusher le fichier **_Questions.md_**
 
+# Amélioration
+
+Vous devez désormais regarder / analyser / critiquer / améliorer le code existant en appliquant les bonnes pratiques d'éco-conception.
+Effectuer le parcour d'un Utilisateur en vous aidant des information de la "console du devellopeur" de Chrome pour cela.
+
+
+Pour chacune des propositions que vous faites, vous devez :
+  1. Decrire la proposition dans le fichier **_Questions.md_**
+  1. Implementer votre proposition
+  1. Tester la proposition
+  1. Commiter  & Pusher le code et le  fichier **_Questions.md_**
+
+## Proposition 1
+Suivez les étapes ci-desus et répondre à Q12  du fichier fichier **_Questions.md_**
+
+## Proposition 2
+Suivez les étapes ci-desus et répondre à Q13  du fichier fichier **_Questions.md_**
+
+## Proposition 3
+Suivez les étapes ci-desus et répondre à Q14  du fichier fichier **_Questions.md_**
+
+
 # Pull Request
 Une fois tous vos commits & Push réalisés sur votre repo, il est nécessaire de faire la **Pull Request** sur le repo **parent**.
 Pour cela, il suffit de :
