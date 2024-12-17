@@ -1,4 +1,4 @@
-import { evaluate, getAnswers, getProposalApi, getQuestionsApi, saveAnswer } from './store.js';
+import { evaluate, getProposalApi, getQuestionsApi } from './store.js';
 import './style.css';
 
 export let quizzData;
