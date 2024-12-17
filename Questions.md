@@ -93,26 +93,45 @@ Les fichiers générés par la commande `npm run build` sont :
 
 # Q8 : Noter les nom des différents fichiers .js qui sont chargés au moment du chargement de la page.
 Réponse:
-1. **main-BdixoVug.js**  
-2. **index.html**  
-3. **style-b4SyXn9O.css**  
+1. **style-Dgd37vtf.js** (pour le style de la page)
+2. **main-BdixoVug.js** (fichier principal du quizz)
+3. **axe.js** (si utilisé pour des fonctions liées à l'accessibilité, comme indiqué précédemment dans le terminal)
+4. **highlighter.js** (si utilisé pour des fonctionnalités d'interaction ou de coloration du texte)
 
-En plus, une tentative de requête API a échoué pour l’URL suivante :  
-`https://url.api/quizz/questions` → **net::ERR_NAME_NOT_RESOLVED**  
-Cela signifie que l’API n’a pas pu être résolue, entraînant une erreur.
-
+Ces fichiers sont nécessaires au bon fonctionnement de l'interface utilisateur et à l'interaction avec l'application de quizz.
 # Q9 : Noter les nom des différents fichiers .js qui sont chargés au moment du changement de page.
 Réponse:
-1. **about/index.html**  
-2. **style-b4SyXn9O.css**  
-3. **about-D08RWGIN.js**  
+
+1. **about-D08RWGIN.js**  
+2. **style-Dgd37vtf.js**  
+3. **axe.js**  
+4. **highlighter.js**
 
 Ces fichiers sont spécifiques à la page `/about` et démontrent l'efficacité du **Code Splitting**, car seuls les fichiers nécessaires sont chargés dynamiquement lors de la navigation.
-
+1. **about-D08RWGIN.js**  
+2. **style-Dgd37vtf.js**  
+3. **axe.js**  
+4. **highlighter.js**
 # Q10: Quel est l'intérêt de lu Code Splitting d'un point de vue éco-responsable ?
 Réponse:
+Le **Code Splitting** présente plusieurs avantages importants pour l'éco-responsabilité d'une application web :
 
+1. **Réduction de la taille des fichiers chargés initialement** :  
+   Grâce au Code Splitting, seuls les fichiers nécessaires au premier affichage sont chargés, ce qui réduit la **bande passante utilisée**. Cela diminue la quantité de données transmises et contribue à **une utilisation plus économe des ressources**.
 
+2. **Réduction du temps de chargement** :  
+   En chargeant les fichiers de manière fractionnée, l'application se charge plus rapidement, ce qui diminue la **consommation d'énergie** du serveur et des terminaux utilisateurs.
+
+3. **Amélioration de la performance utilisateur** :  
+   En ne chargeant que les fichiers nécessaires à chaque page, l'application devient plus rapide et réactive, ce qui réduit la durée d’utilisation des ressources énergétiques pour les utilisateurs.
+
+4. **Moins de requêtes réseau** :  
+   Le Code Splitting permet de n'envoyer que les fichiers spécifiques à chaque page, réduisant ainsi le nombre de requêtes réseau et **l'empreinte carbone** associée au trafic internet.
+
+5. **Réduction de l'impact écologique** :  
+   En optimisant les fichiers et les requêtes, on limite la consommation des **ressources des serveurs** et la **bande passante**, contribuant ainsi à une réduction de l'empreinte carbone des infrastructures numériques.
+
+En résumé, le **Code Splitting** améliore la performance tout en réduisant l'impact environnemental de l'application en minimisant la quantité de données échangées et la consommation d'énergie nécessaire à leur traitement.
 # Q11: Ajouter le screen de votre score :
 Screen:
 
