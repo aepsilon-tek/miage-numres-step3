@@ -70,7 +70,8 @@ Moins de pression sur les serveurs : Cela diminue l’énergie consommée par le
 
 
 # Q11: Ajouter le screen de votre score :
-Screen:
+Screen: 
+![screen](image.png)
 
 
 # Q12:  Proposition 1
