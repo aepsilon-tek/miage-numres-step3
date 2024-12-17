@@ -45,17 +45,32 @@ dist/assets/index-03z4V8OH.js   156.75 kB │ gzip: 51.85 kB
 
 # Q7: Noter les nom des différents fichiers qui ont été générés par la commande.
 Réponse:
+dist/about/index.html           0.53 kB │ gzip: 0.32 kB
+dist/index.html                 0.65 kB │ gzip: 0.37 kB
+dist/assets/style-b4SyXn9O.css  2.18 kB │ gzip: 0.79 kB
+dist/assets/about-D08RWGIN.js   0.15 kB │ gzip: 0.16 kB
+dist/assets/style-Dgd37vtf.js   0.71 kB │ gzip: 0.40 kB
+dist/assets/main-BdixoVug.js    3.20 kB │ gzip: 1.14 kB
 
 # Q8 : Noter les nom des différents fichiers .js qui sont chargés au moment du chargement de la page.
 Réponse:
+https://4173-stabbaa24-miagenumresst-utow5pnt2mr.ws-eu117.gitpod.io/assets/main-BdixoVug.js
+https://4173-stabbaa24-miagenumresst-utow5pnt2mr.ws-eu117.gitpod.io/assets/style-Dgd37vtf.js
+chrome-extension://bcgbghlhkkhcimckjabgomapgommajen/customScript.bundle.js
 
 # Q9 : Noter les nom des différents fichiers .js qui sont chargés au moment du changement de page.
 Réponse:
-
+https://4173-stabbaa24-miagenumresst-utow5pnt2mr.ws-eu117.gitpod.io/assets/about-D08RWGIN.js
+https://4173-stabbaa24-miagenumresst-utow5pnt2mr.ws-eu117.gitpod.io/assets/style-Dgd37vtf.js
+chrome-extension://bcgbghlhkkhcimckjabgomapgommajen/customScript.bundle.js
 
 # Q10: Quel est l'intérêt de lu Code Splitting d'un point de vue éco-responsable ?
 Réponse:
+Le Code Splitting permet de diviser un gros fichier JavaScript en plusieurs petits morceaux chargés seulement quand nécessaire. Cela présente plusieurs avantages éco-responsables :
 
+- Réduction de la consommation de données : En chargeant seulement les scripts nécessaires, cela diminue la quantité de données transférées, économisant l'énergie liée à leur transmission.
+- Amélioration de la performance : Les pages chargent plus rapidement en ne sollicitant que les ressources nécessaires, réduisant ainsi la consommation d'énergie des appareils et des serveurs.
+- Optimisation des ressources serveur : Les serveurs gèrent plus efficacement les demandes avec des fichiers plus petits, diminuant leur consommation énergétique.
 
 # Q11: Ajouter le screen de votre score :
 Screen:
