@@ -103,8 +103,19 @@ Description: En utilisant la console du développeur, il est constaté que tous 
 Proposition : Demander aux clients quel média il veut garder. Il m'a dit juste 3.
 
 Nb de requête total du parcours de l'utilisateur:
-Taille total des requêtes du parcours de l'utilisateur:
-Taille total des fichiers générés :
 
-# Q15:  Proposition 4
+Avant (chargement page) :
+- 13 requests
+- 380 kB transferred
+- 492 kB resources
+- Finish: 371 ms
+
+Après (chargement page) : 
+- 13 requests
+- 147 kB transferred
+- 491 kB resources
+- Finish: 332 ms
+
+# Q15:  Proposition 4 - BONUS
 Description: Modifier le endpoint de l'api en faisant la query que sur l'id mais aussi faire que l'évaluate dans le payload ne retourne que l'id car on a pas besoin du label
+-> Pas eu le temps de l'implémenter
