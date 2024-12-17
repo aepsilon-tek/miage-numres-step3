@@ -64,7 +64,7 @@ Réponse:consiste à diviser le code JavaScript en plusieurs fichiers plus petit
 
 # Q11: Ajouter le screen de votre score :
 Screen:
-
+![image.png](image.png)
 
 # Q12:  Proposition 1
 Description:
