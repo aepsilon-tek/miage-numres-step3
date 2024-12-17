@@ -29,13 +29,25 @@ La minification complique ces tâches et ralentit le processus, ce qui est inuti
 # Q4 : Donner la tailles des fichiers générer par la commande.
 Réponse:
 
-
+dist/index.html                   0.46 kB │ gzip:  0.30 kB
+dist/assets/react-CHdo91hT.svg    4.13 kB │ gzip:  2.05 kB
+dist/assets/index-DZl-RcEH.css    5.66 kB │ gzip:  1.40 kB
+dist/assets/index-C_arIFqf.js   143.90 kB │ gzip: 46.34 kB
 
 # Q5: Quel est l'intérêt du HMR ?
 Réponse:
 
+Le HMR permet de mettre à jour des modules (fichiers JavaScript, CSS, etc.) dans une application en cours d'exécution sans recharger entièrement la page
+
 # Q6: Donner la tailles des fichiers générer par la commande. Pourquoi il faut être vigilant sur les libraires et autre composant qu'on ajoute dans nos applications d'un point de vue éco-responsable ?
 Réponse:
+
+dist/index.html                   0.46 kB │ gzip:  0.30 kB
+dist/assets/react-CHdo91hT.svg    4.13 kB │ gzip:  2.05 kB
+dist/assets/index-DZl-RcEH.css    5.66 kB │ gzip:  1.40 kB
+dist/assets/index-03z4V8OH.js   156.75 kB │ gzip: 51.85 kB
+
+Ajouter trop de librairies ou composants alourdit les applications, ce qui augmente la consommation de bande passante et d'énergie. Cela ralentit les performances et sollicite davantage les serveurs et appareils des utilisateurs. De plus, certaines librairies contiennent du code inutile qui n'est jamais utilisé. Cela gaspille des ressources
 
 # Q7: Noter les nom des différents fichiers qui ont été générés par la commande.
 Réponse:
