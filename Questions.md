@@ -84,18 +84,42 @@ Screen:
 
 # Q12:  Proposition 1
 Description:
-Nb de requête total du parcours de l'utilisateur:
-Taille total des requêtes du parcours de l'utilisateur:
-Taille total des fichiers généré :
+Réduction des requêtes HTTP (cache local) : 
+- Avant, l’API était appelée à chaque fois.
+- Maintenant, les questions et propositions sont mises en cache localement avec localStorage.
+- Avantages :
+- Moins de bande passante utilisée.
+- Moins de requêtes réseau = empreinte carbone réduite.
+- Gain de temps (pas besoin d’attendre la réponse de l’API).
 
 # Q13:  Proposition 2
 Description:
-Nb de requête total du parcours de l'utilisateur:
-Taille total des requêtes du parcours de l'utilisateur:
-Taille total des fichiers généré :
+Réduction de la redondance :
+Avant, les fonctions getQuestionsApi, getProposalApi, evaluate faisaient des fetch() identiques.
+Maintenant, une seule fonction générique fetchFromApi() est utilisée.
 
 # Q14:  Proposition 3
-Description:
+Description: Utilisation de variables les plus locales possible et on enlève le maximum de variables globales.
+Ca permet d'avoir un code beaucoup plus propre, et plus performant.
+
+
+
+Je vous mets les chiffres pour les tailles et nombre de requêtes pour toutes les propositions en une fois.
+
 Nb de requête total du parcours de l'utilisateur:
+4 requetes lorsque je réponds aux questions. Il y en a bien moins qu'avant.
+=> 1 preflight et 3 fetch
+Au chargement du quizz, j'ai 15 requêtes
+
 Taille total des requêtes du parcours de l'utilisateur:
-Taille total des fichiers générés :
+124 B transferred
+
+Taille total des fichiers généré :
+La taille ne change pas
+
+dist/about/index.html           0.53 kB │ gzip: 0.32 kB
+dist/index.html                 0.65 kB │ gzip: 0.37 kB
+dist/assets/style-b4SyXn9O.css  2.18 kB │ gzip: 0.79 kB
+dist/assets/about-D08RWGIN.js   0.15 kB │ gzip: 0.16 kB
+dist/assets/style-Dgd37vtf.js   0.71 kB │ gzip: 0.40 kB
+dist/assets/main-B7lxTwf5.js    3.62 kB │ gzip: 1.35 kB
