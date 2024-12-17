@@ -81,8 +81,7 @@ Le Code Splitting permet de diviser le code en morceaux qui peuvent Ãªtre chargÃ
 
 # Q11: Ajouter le screen de votre score :
 Screen:
-![alt text]({4BE0F518-09F0-40E9-A45C-68A4DA85A303}.png)
-
+![alt text]({AA7CD506-2469-4BBD-9F67-DA86C019EFB6}.png)
 
 # Q12:  Proposition 1
 Description:
