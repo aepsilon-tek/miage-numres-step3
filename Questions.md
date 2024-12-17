@@ -78,18 +78,24 @@ Screen:
 Description: Les données des questions et des réponses sont rechargées à chaque fois, même si elles n'ont pas changé.
 Proposition : Mettre en cache les données des questions et des réponses dans localStorage et les recharger uniquement si elles ont changé depuis le dernier chargement.
 
-Nb de requête total du parcours de l'utilisateur:
-Taille total des requêtes du parcours de l'utilisateur:
 Taille total des fichiers généré :
+dist/about/index.html           0.53 kB │ gzip: 0.32 kB
+dist/index.html                 0.65 kB │ gzip: 0.38 kB
+dist/assets/style-b4SyXn9O.css  2.18 kB │ gzip: 0.79 kB
+dist/assets/about-D08RWGIN.js   0.15 kB │ gzip: 0.16 kB
+dist/assets/style-Dgd37vtf.js   0.71 kB │ gzip: 0.40 kB
+dist/assets/main-CQMffDIu.js    3.52 kB │ gzip: 1.27 kB
+
+En mettant en cache, on a sur inspecter l'élement : 
+- 5 requests
+- 146 kB transferred
+- 146 kB resources
 
 # Q13:  Proposition 2
-Description: Les réponses serveur pour les questions et les propositions ne sont pas compressées, ce qui augmente la quantité de données transférées.
+Description: Modifier le type d'image ou demander aux client si les images sont nécessaires.
 
-Proposition : Utiliser des techniques de compression comme gzip pour les réponses serveur afin de réduire la taille des données transmises.
-
-Nb de requête total du parcours de l'utilisateur:
-Taille total des requêtes du parcours de l'utilisateur:
-Taille total des fichiers généré :
+Avant l'image faisait : 648 B
+L'image fait à présent : 12 B
 
 # Q14:  Proposition 3
 Description: En utilisant la console du développeur, il est constaté que tous les scripts de médias sociaux sont chargés, même quand ils ne sont pas utilisés.
