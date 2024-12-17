@@ -74,7 +74,7 @@ Le Code Splitting permet de réduire la taille des fichiers chargés en divisant
 
 
 # Q11: Ajouter le screen de votre score :
-Screen:
+Screen:![alt text](image.png)
 
 
 # Q12:  Proposition 1
