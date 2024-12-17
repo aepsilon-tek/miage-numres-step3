@@ -44,23 +44,39 @@ Les principaux risques :
 Augmentation de la taille des fichiers
 Risque de dépendances inutiles
 Redondance et duplication
+
 # Q7: Noter les nom des différents fichiers qui ont été générés par la commande.
 Réponse:
+dist/about/index.html          
+dist/index.html                 
+dist/assets/style-b4SyXn9O.css  
+dist/assets/about-D08RWGIN.js   
+dist/assets/style-Dgd37vtf.js  
+dist/assets/main-BdixoVug.js 
 
 # Q8 : Noter les nom des différents fichiers .js qui sont chargés au moment du chargement de la page.
 Réponse:
+- **main-BdixoVug.js**  
+- **style-Dgd37vtf.js**  
 
 # Q9 : Noter les nom des différents fichiers .js qui sont chargés au moment du changement de page.
 Réponse:
-
+- **about-D08RWGIN.js**  
+- **style-Dgd37vtf.js**
 
 # Q10: Quel est l'intérêt de lu Code Splitting d'un point de vue éco-responsable ?
 Réponse:
+Le Code Splitting permet de charger uniquement les fichiers nécessaires pour chaque page, ce qui :  
+- Réduit la taille des fichier transférés,  
+- Diminue les temps de chargement,  
+- Économise la bande passante,  
+- Réduit la consommation énergétique des serveurs et des appareils des utilisateurs.  
 
+Cela contribue ainsi à une application plus légère et éco-responsable.  
 
 # Q11: Ajouter le screen de votre score :
 Screen:
-
+![IMAGE ANALYSE](./imageAnalyse.png)
 
 # Q12:  Proposition 1
 Description:

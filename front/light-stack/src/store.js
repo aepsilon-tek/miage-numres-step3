@@ -68,7 +68,7 @@ export async function getProposalApi(idQuestion) {
 }
 
 export async function evaluate(proposals) {
-  const url = `${baseUrl}/quizz/proposals/evaluate`;
+  const url = `https://8080-leonidas777-miagenumres-gb4skngjo18.ws-eu117.gitpod.io`;
 
   try {
     const reponse = await fetch(url, {
