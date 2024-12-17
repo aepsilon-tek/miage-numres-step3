@@ -17,18 +17,35 @@ Réponse: L'intéret est de recharger juste les parties modifié de la page. Cel
 Réponse: 167 kB
 
 # Q7: Noter les nom des différents fichiers qui ont été générés par la commande.
-Réponse: 
+Réponse:  
+dist/about/index.html           0.53 kB │ gzip: 0.32 kB
+dist/index.html                 0.65 kB │ gzip: 0.37 kB
+dist/assets/style-b4SyXn9O.css  2.18 kB │ gzip: 0.79 kB
+dist/assets/about-D08RWGIN.js   0.15 kB │ gzip: 0.16 kB
+dist/assets/style-Dgd37vtf.js   0.71 kB │ gzip: 0.40 kB
+dist/assets/main-BdixoVug.js    3.20 kB │ gzip: 1.14 kB
 
 # Q8 : Noter les nom des différents fichiers .js qui sont chargés au moment du chargement de la page.
-Réponse:
+Réponse: 
+
+main-BdixoVug.js
+style-Dgd37vtf.js
+
 
 # Q9 : Noter les nom des différents fichiers .js qui sont chargés au moment du changement de page.
 Réponse:
 
+about-D08RWGIN.js
+style-Dgd37vtf.js
+
 
 # Q10: Quel est l'intérêt de lu Code Splitting d'un point de vue éco-responsable ?
-Réponse:
-
+Réponse: Cela permet de charger moins de données car seul les parties importantes sont chargés lorsqu'elle sont requises. Cela permet d'optimiser ldes requêtes serveur.
+En téléchargeant uniquement ce qui est nécessaire (lazy loading des modules), on évite le gaspillage énergétique lié à des fichiers inutiles qui ne sont jamais utilisés par l’utilisateur.
+Réduction de la consommation d’énergie : Moins de données à charger et à traiter.
+Optimisation des ressources serveur : Moins de charge pour les serveurs et les centres de données.
+Amélioration de la longévité du matériel : Fonctionnement plus fluide sur des appareils anciens ou moins performants.
+Accessibilité : Moins d'impact pour les utilisateurs avec une connexion lente ou limitée.
 
 # Q11: Ajouter le screen de votre score :
 Screen:
