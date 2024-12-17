@@ -8,13 +8,13 @@ Réponse: 243 kB
 Réponse: Non il n'est pas lisible mais l'intêret est de réduire sa taille, qu'il se charge rapidement et qu'il consomme moins de ressources.
 
 # Q4 : Donner la tailles des fichiers générer par la commande.
-Réponse:
+Réponse: La taille normale des fichiers est de 154,15 kB. Et pour la taille zippée des fichiers : 50,09 kB.
 
 # Q5: Quel est l'intérêt du HMR ?
-Réponse:
+Réponse: L'affichage des modifications du code en l'instant T sans avoir besoin de rebuild l'app.
 
 # Q6: Donner la tailles des fichiers générer par la commande. Pourquoi il faut être vigilant sur les libraires et autre composant qu'on ajoute dans nos applications d'un point de vue éco-responsable ?
-Réponse:
+Réponse: 167 kB | 55,6 kB. Pour ne pas trop charger la bande passante.
 
 # Q7: Noter les nom des différents fichiers qui ont été générés par la commande.
 Réponse:
