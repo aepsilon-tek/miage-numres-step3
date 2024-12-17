@@ -9,12 +9,44 @@ Réponse: Non. La minification des fichiers réduit leur taille, ce qui accélè
 
 # Q4 : Donner la tailles des fichiers générer par la commande.
 Réponse:
+dist/index.html :
+Taille brute : 0.46 kB
+Taille gzip : 0.30 kB
+
+dist/assets/react-CHdo91hT.svg :
+Taille brute : 4.13 kB
+Taille gzip : 2.05 kB
+
+dist/assets/index-DZl-RcEH.css :
+Taille brute : 5.66 kB
+Taille gzip : 1.40 kB
+
+dist/assets/index-C_arIFqf.js :
+Taille brute : 143.90 kB
+Taille gzip : 46.34 kB
 
 # Q5: Quel est l'intérêt du HMR ?
-Réponse:
+Réponse: Le HMR (Hot Module Replacement) permet de mettre à jour les modules d'une application en cours d'exécution sans recharger complètement la page.
 
 # Q6: Donner la tailles des fichiers générer par la commande. Pourquoi il faut être vigilant sur les libraires et autre composant qu'on ajoute dans nos applications d'un point de vue éco-responsable ?
 Réponse:
+dist/index.html :
+Taille brute : 0.46 kB
+Taille gzip : 0.30 kB
+
+dist/assets/react-CHdo91hT.svg :
+Taille brute : 4.13 kB
+Taille gzip : 2.05 kB
+
+dist/assets/index-DZl-RcEH.css :
+Taille brute : 5.66 kB
+Taille gzip : 1.40 kB
+
+dist/assets/index-03z4V8OH.js :
+Taille brute : 156.75 kB
+Taille gzip : 51.85 kB
+
+Il est crucial de rester vigilant sur les librairies et composants ajoutés dans une application, car chaque ajout augmente la taille des fichiers finaux. Cela entraîne une consommation accrue de bande passante et d'énergie pour les serveurs, les réseaux et les appareils des utilisateurs, ce qui alourdit l'empreinte carbone. De plus, des fichiers volumineux dégradent les performances de l'application, augmentent les temps de chargement, et sollicitent davantage les appareils, en particulier sur des connexions limitées ou des équipements moins puissants. Optimiser et limiter les dépendances est donc essentiel pour garantir une application éco-responsable, performante et accessible.
 
 # Q7: Noter les nom des différents fichiers qui ont été générés par la commande.
 Réponse:
