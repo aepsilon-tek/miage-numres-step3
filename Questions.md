@@ -77,7 +77,8 @@ Taille total des fichiers généré :
 
 
 # Q13:  Proposition 2
-Description:
+Description: réduir la taille de l'image (image gif en image fixe)
+
 Nb de requête total du parcours de l'utilisateur:
 Taille total des requêtes du parcours de l'utilisateur:
 Taille total des fichiers généré :
