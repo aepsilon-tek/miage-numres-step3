@@ -84,7 +84,7 @@ async function selectAnswer(e) {
 }
 
 // Afficher le résultat final
-function showResult() {
+async function showResult() {
   const quizElement = document.getElementById("quiz");
   quizElement.innerHTML = `
     <h1>Quizz Terminé !</h1>
