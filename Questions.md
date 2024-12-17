@@ -82,6 +82,14 @@ En résumé, **réduire les dépendances** permet d'améliorer les performances 
 
 # Q7: Noter les nom des différents fichiers qui ont été générés par la commande.
 Réponse:
+Les fichiers générés par la commande `npm run build` sont :
+
+1. **dist/about/index.html**  
+2. **dist/index.html**  
+3. **dist/assets/style-b4SyXn9O.css**  
+4. **dist/assets/about-D08RWGIN.js**  
+5. **dist/assets/style-Dgd37vtf.js**  
+6. **dist/assets/main-BdixoVug.js**
 
 # Q8 : Noter les nom des différents fichiers .js qui sont chargés au moment du chargement de la page.
 Réponse:
