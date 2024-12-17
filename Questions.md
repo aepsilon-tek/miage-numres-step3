@@ -77,7 +77,9 @@ Réponse:
 Réponse: Le code splitting permet de charger seulement les fichiers de la page visuellement affichée dans l'interface utilisateur. Cela permet d'économiser des données et du temps car il n'y a pas besoin de charger tous les fichiers du projet.
 
 # Q11: Ajouter le screen de votre score :
-Screen:
+Screen: 
+
+![mon score est de 85 en accessibilité](image.png)
 
 
 # Q12:  Proposition 1
