@@ -96,20 +96,35 @@ Donc en réusumé : temps de chargement initial réduit, moins de parsing/compil
 # Q11: Ajouter le screen de votre score :
 Screen: ![Score du Lighthouse](image.png)
 
-# Q12:  Proposition 1
-Description:
-Nb de requête total du parcours de l'utilisateur:
-Taille total des requêtes du parcours de l'utilisateur:
-Taille total des fichiers généré :
+# Q12: Proposition 1
+Description: Optimiser le stockage local et la gestion du cache
+- Implémenter un système de TTL (Time To Live) pour le localStorage
+- Nettoyer périodiquement les données obsolètes
+- Limiter la taille des données stockées
 
-# Q13:  Proposition 2
-Description:
-Nb de requête total du parcours de l'utilisateur:
-Taille total des requêtes du parcours de l'utilisateur:
-Taille total des fichiers généré :
+Nb de requête total du parcours de l'utilisateur: 
+Taille total des requêtes du parcours de l'utilisateur: 
+Taille total des fichiers généré: 
 
-# Q14:  Proposition 3
-Description:
+# Q13: Proposition 2
+Description: Optimiser les appels API
+- Remplacer l'URL en dur dans [store.js](store.js) par une variable d'environnement
+- Implémenter un mécanisme de regroupement des requêtes (batch)
+- Ajouter un système de mise en cache des réponses API
+
+Nb de requête total du parcours de l'utilisateur: 5 (une fois il récupère les infos, puis après dans le cache)
+Taille total des requêtes du parcours de l'utilisateur:
+Taille total des fichiers généré: 
+
+# Q14: Proposition 3
+Description: Optimiser les assets et le chargement
+- Optimiser les formats d'images (WebP)
+- Arriver directement sur la page du quizz, la page d'accueil ne sert à rien à part avoir un bouton pour y accéder
+
 Nb de requête total du parcours de l'utilisateur:
 Taille total des requêtes du parcours de l'utilisateur:
-Taille total des fichiers générés :
+Taille total des fichiers généré: 
+
+# Q15: Proposition 4
+Description: Optimiser le rendu et l'interactivité pour l'accessibilité
+![Lighthouse2](image-1.png)
