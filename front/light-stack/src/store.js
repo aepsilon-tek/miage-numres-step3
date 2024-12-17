@@ -1,4 +1,4 @@
-export const baseUrl = "https://url.api";
+export const baseUrl = "https://8080-leonidas777-miagenumres-gb4skngjo18.ws-eu117.gitpod.io";
 
 export function getQuestions() {
   let questions;

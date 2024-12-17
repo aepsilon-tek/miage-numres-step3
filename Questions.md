@@ -79,7 +79,7 @@ Screen:
 ![IMAGE ANALYSE](./imageAnalyse.png)
 
 # Q12:  Proposition 1
-Description:
+Description: Actuellement, une requête API est faite pour chaque question afin de récupérer ses propositions. Cela entraîne un nombre important de requêtes HTTP. Une optimisation consiste à modifier l'API pour récupérer toutes les questions avec leurs propositions dans une seule requête. 
 Nb de requête total du parcours de l'utilisateur:
 Taille total des requêtes du parcours de l'utilisateur:
 Taille total des fichiers généré :
