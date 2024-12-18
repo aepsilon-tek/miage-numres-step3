@@ -68,13 +68,15 @@ Le Code Splitting permet de charger uniquement les fichiers nécessaires pour ch
 
 # Q11: Ajouter le screen de votre score :
 Screen:
+![Capture d'écran Q11](./Capture_decran_2024-12-17_a_14.41.56.png)
+
 
 
 # Q12:  Proposition 1
 Description:
-Nb de requête total du parcours de l'utilisateur:
-Taille total des requêtes du parcours de l'utilisateur:
-Taille total des fichiers généré :
+Nb de requête total du parcours de l'utilisateur: Réduit de 𝑁 + 1 N+1 (N requêtes pour les questions + 1 pour leur récupération) à une seule requête.
+Taille total des requêtes du parcours de l'utilisateur: Légèrement augmentée pour une seule requête, mais considérablement optimisée en termes de temps.
+Taille total des fichiers généré : Restée inchangée
 
 # Q13:  Proposition 2
 Description:
