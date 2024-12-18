@@ -1,5 +1,4 @@
 import { initQuizz } from './quizz.js';
-import './style.css';
 
 document.querySelector('#app').innerHTML = `
         <div class="header">
