@@ -1,4 +1,4 @@
-import { evaluate, getAnswers, getProposalApi, getQuestionsApi, saveAnswer } from './store.js';
+import { initQuizz } from './quizz.js';
 import './style.css';
 
 document.querySelector('#app').innerHTML = `
@@ -54,69 +54,4 @@ document.querySelector('#app').innerHTML = `
         </div>
 `
 
-localStorage.clear();
-let quizzData;
-
-const questionElement = document.getElementById("question");
-const proposalsElement = document.getElementById("proposals");
-  
-let currentQuestion = 0;
-let score = 0;
-  
-async function showQuestion() {
-  quizzData = await getQuestionsApi();
-    
-
-  for (let i = 0; i < quizzData.length; i++) {
-    let proposals = await getProposalApi(quizzData[i].id);
-    quizzData[i].proposals = proposals;
-  }
-
-  const question = quizzData[currentQuestion];
-  questionElement.innerText = question.label
-  
-  proposalsElement.innerHTML = "";
-  question.proposals.forEach(proposal => {
-    const button = document.createElement("button");
-    button.innerText = proposal.label;
-    proposalsElement.appendChild(button);
-    button.addEventListener("click", selectAnswer);
-  });
-}
-  
-async function selectAnswer(e) {
-  const selectedButton = e.target;
-  let proposals = quizzData[currentQuestion].proposals;
-
-  // let chosedProposal = [];
-  for (let i = 0; i < proposals.length; i++) {
-      
-    if (selectedButton.innerText === proposals[i].label) {
-      // chosedProposal.push(proposals[i]);
-      saveAnswer(proposals[i]);
-    }
-  }
-
-  // let point = await evaluate(chosedProposal);
-
-  // score = score + point;
-  
-  currentQuestion++;
-  
-  if (currentQuestion < quizzData.length) {
-    showQuestion();
-  } else {
-    showResult();
-  }
-}
-  
-async function showResult() {
-  let score = await evaluate(getAnswers());
-  quiz.innerHTML = `
-    <h1>Quizz Finis!</h1>
-    <p>Ton score: ${score}/${quizzData.length}</p>
-  `;
-}
-  
-
-showQuestion();
+initQuizz();

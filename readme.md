@@ -24,7 +24,7 @@ Une application web consomme une API Rest Quarkus  qui s'appuie sur une base de 
 
 ## TP3 - Choix stack Front-End
 
-Votre client  veut une api de quizz en français qui :
+Votre client  veut une Application de quizz en français qui :
 * Permet à un utilisateur de passer le quizz.
 * Indique le score du joueur à la fin du quizz.
 * Met en avant tout ces réseaux sociaux.
@@ -97,16 +97,16 @@ Le mode DEV, nous permet de profiter du HMR, ce qui donne une expérience de dé
 3. Build l'App `npm run build`
 4. Répondre à la question Q4 du fichier **_Questions.md_**
 5. Lancer l'app front en mode "dev" `npm run dev`
-6. Constater le Hot module Reload (HMR)
-	7. Mettre cote à cote gitpod et l'onglet de l'app que vous venez de lancer
-	8. Ouvrez le fichier `front/big-stack/src/App.tsx`
-	10. dé-commenter la ligne `// import { Rating } from '@smastrom/react-rating';`
-	11. dé-commenter la ligne `// const [rating, setRating] = useState(0) // Initial value`
-	12. dé-commenter la ligne `{/* <Rating style={{ maxWidth: 250 }} value={rating} onChange={setRating} /> */}`
-	13. Sauvegarder et Répondez à la Q5 du fichier **_Questions.md_**
-7. Build l'App `npm run build`
-8. Répondre à la question Q6 du fichier **_Questions.md_**
-9. Commiter  & Pusher le fichier **_Questions.md_**
+1. Constater le Hot module Reload (HMR)
+    1. Mettre cote à cote gitpod et l'onglet de l'app que vous venez de lancer
+    2. Ouvrez le fichier `front/big-stack/src/App.tsx`
+    3. dé-commenter la ligne `// import { Rating } from '@smastrom/react-rating';`
+    4. dé-commenter la ligne `// const [rating, setRating] = useState(0) // Initial value`
+    5. dé-commenter la ligne `{/* <Rating style={{ maxWidth: 250 }} value={rating} onChange={setRating} /> */}`
+    6. Sauvegarder et Répondez à la Q5 du fichier **_Questions.md_**
+8. Build l'App `npm run build`
+9. Répondre à la question Q6 du fichier **_Questions.md_**
+10. Commiter  & Pusher le fichier **_Questions.md_**
 
 ## Code Splitting
 ViteJs permet d'effectuer du Code splitting
@@ -115,19 +115,19 @@ ViteJs permet d'effectuer du Code splitting
 2. Installer les dépendances : `npm install`
 3. Build l'App `npm run build`
 4. Répondre à la question Q7 du fichier **_Questions.md_**
-5. Constater le Code Splitting
-	7. Lancer l'app front en mode "build" `npm run preview`
-	8. Mettre cote à cote gitpod et l'onglet de l'app que vous venez de lancer
-	9. Ouvrir la console développer (click droit -> inspecter)
-	10. Aller dans l'onglet Réseau
-	11. Effacer l'historique
-	12. Recharger la page
-	13. Répondre à la question Q8 du fichier **_Questions.md_**
-	14. Effacer l'historique
-	15. Click sur /about
-	16. Répondre à la question Q9 du fichier **_Questions.md_**
-6. Répondre à la question Q10 du fichier **_Questions.md_**
-7. Commiter  & Pusher le fichier **_Questions.md_**
+1. Constater le Code Splitting
+    1. Lancer l'app front en mode "build" `npm run preview`
+    2. Mettre cote à cote gitpod et l'onglet de l'app que vous venez de lancer
+    3. Ouvrir la console développer (click droit -> inspecter)
+    4. Aller dans l'onglet Réseau
+    5. Effacer l'historique
+    6. Recharger la page
+    7. Répondre à la question Q8 du fichier **_Questions.md_**
+    8. Effacer l'historique
+    9. Click sur /about
+    10. Répondre à la question Q9 du fichier **_Questions.md_**
+7. Répondre à la question Q10 du fichier **_Questions.md_**
+8. Commiter  & Pusher le fichier **_Questions.md_**
 
 ## Accessibilité
 
@@ -143,17 +143,47 @@ Lightouse est un outils présent dans le navigateur Chrome qui se repose sur Axe
 
 ## Connecter l'api et le front
 
-1. Retourner à la racine du projet :  `cd /workspace/miage-numres-step3/`
-2. Lancer l'api : `./mvnw quarkus:dev -pl api`
-3. Clicker sur "make public"
-4. Choisir Navigation, Bureau, Accessibilité
-5. Dans VS Code : 
-	6. Aller dans l'onglet PORTS
-	7. copier l'Address qui commence par `https://8080...`
-6. Dans le fichier store.js `front/light-stack/src/store.js`
-	7. Modifier la ligne : `export const baseUrl = "https://url.api";` par l'url que vous venez de copier`export const baseUrl = "https://8080...";`
-7. Répondre à la question Q11 du fichier **_Questions.md_**
-8. Commiter  & Pusher le fichier **_Questions.md_**
+1. Ouvrir deux terminaux.
+1. Terminal 1 :
+   1. Retourner à la racine du projet :  `cd /workspace/miage-numres-step3/`
+   2. Aller dans le la partie front : `cd front`
+   3. Installer les dépendances : `npm install`
+   3. Lancer l'application Front en mode dev : `npm run dev`
+1. Terminal 2 :
+   1. Retourner à la racine du projet :  `cd /workspace/miage-numres-step3/`
+   2. Lancer l'api : `./mvnw quarkus:dev -pl api`
+   3. Clicker sur "make public"
+   5. Dans VS Code : 
+       1. Aller dans l'onglet PORTS
+       2. Copier l'Address qui commence par `https://8080...`
+   5. Dans le fichier store.js `front/light-stack/src/store.js`
+       1. Modifier la ligne : `export const baseUrl = "https://url.api";` par l'url que vous venez de copier`export const baseUrl = "https://8080...";`
+7. Faite le Quizz !
+
+# Amélioration
+
+Nous allons travailler sur le front "light-stack".
+
+Vous devez désormais regarder / analyser / critiquer / améliorer le code existant en appliquant les bonnes pratiques d'éco-conception.
+Effectuer le parcour d'un Utilisateur en vous aidant des information de la "console du devellopeur" de Chrome pour cela.
+
+
+Pour chacune des propositions que vous faites, vous devez :
+  1. Decrire la proposition dans le fichier **_Questions.md_**
+  1. Implementer votre proposition
+  1. Tester la proposition
+  1. Indiquez soit le gain en tailles de fichier, soit en nombre de requête soit en taille de requête.
+  1. Commiter  & Pusher le code et le  fichier **_Questions.md_**
+
+## Proposition 1
+Suivez les étapes ci-desus et répondre à Q12  du fichier fichier **_Questions.md_**
+
+## Proposition 2
+Suivez les étapes ci-desus et répondre à Q13  du fichier fichier **_Questions.md_**
+
+## Proposition 3
+Suivez les étapes ci-desus et répondre à Q14  du fichier fichier **_Questions.md_**
+
 
 # Pull Request
 Une fois tous vos commits & Push réalisés sur votre repo, il est nécessaire de faire la **Pull Request** sur le repo **parent**.
@@ -161,6 +191,3 @@ Pour cela, il suffit de :
 1. Se rendre sur votre compte personnel sur `GitHub`.
 1. Sur la page principale, se rendre sur `Contribute` > `Open pull Request`
 1. Remplir le titre de la pull request en précisant votre nom (vos noms) et `Create pull request`
-
-
-* ```./mvnw quarkus:dev -pl api``` : Lancement de l'api
