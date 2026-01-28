@@ -98,7 +98,7 @@ Le mode DEV, nous permet de profiter du HMR, ce qui donne une expérience de dé
 4. Répondre à la question Q4 du fichier **_Questions.md_**
 5. Lancer l'app front en mode "dev" `npm run dev`
 1. Constater le Hot module Reload (HMR)
-    1. Mettre cote à cote gitpod et l'onglet de l'app que vous venez de lancer
+    1. Mettre cote à cote, votre code et l'onglet de l'app que vous venez de lancer
     2. Ouvrez le fichier `front/big-stack/src/App.tsx`
     3. dé-commenter la ligne `// import { Rating } from '@smastrom/react-rating';`
     4. dé-commenter la ligne `// const [rating, setRating] = useState(0) // Initial value`
