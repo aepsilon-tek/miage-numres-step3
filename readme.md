@@ -146,7 +146,7 @@ Lightouse est un outils présent dans le navigateur Chrome qui se repose sur Axe
 1. Ouvrir deux terminaux.
 1. Terminal 1 :
    1. Retourner à la racine du projet :  `cd /workspace/miage-numres-step3/`
-   2. Aller dans le la partie front : `cd front`
+   2. Aller dans le la partie front : `cd front/light-stack`
    3. Installer les dépendances : `npm install`
    3. Lancer l'application Front en mode dev : `npm run dev`
 1. Terminal 2 :
