@@ -117,7 +117,7 @@ ViteJs permet d'effectuer du Code splitting
 4. Répondre à la question Q7 du fichier **_Questions.md_**
 1. Constater le Code Splitting
     1. Lancer l'app front en mode "build" `npm run preview`
-    2. Mettre cote à cote gitpod et l'onglet de l'app que vous venez de lancer
+    2. Mettre cote à cote votre code et l'onglet de l'app que vous venez de lancer
     3. Ouvrir la console développer (click droit -> inspecter)
     4. Aller dans l'onglet Réseau
     5. Effacer l'historique
