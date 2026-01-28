@@ -1,19 +1,27 @@
 {
-  "name": "Environnement MIAGE (Java)",
+  "name": "Environnement MIAGE (Java + Node + Vite)",
   "image": "mcr.microsoft.com/devcontainers/java:21",
 
-  // Personnalisation de VS Code
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "22",
+      "nvmVersion": "latest"
+    }
+  },
+
   "customizations": {
     "vscode": {
       "extensions": [
         "vscjava.vscode-java-pack",
-        "redhat.vscode-quarkus"
+        "redhat.vscode-quarkus",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
       ]
     }
   },
 
-  // Ports Quarkus (8080) 
-  "forwardPorts": [8080],
+  "forwardPorts": [8080, 5173],
 
-  "postAttachCommand": "./.devcontainer/check_fork.sh"
+
+  "postAttachCommand": "./.devcontainer/check_fork.sh",
 }
